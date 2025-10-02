@@ -1,0 +1,17 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "role": "Développeur Full Stack",
+    "cta": "Voir mes projets"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue"
+  }
+}
