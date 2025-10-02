@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+
+commit_msg_file=$1
+commit_msg=$(cat "$commit_msg_file")
+
+# Ignore merge commits
+if echo "$commit_msg" | grep -qE "^Merge"; then
+  exit 0
+fi
+
+# Count lines in commit message
+line_count=$(echo "$commit_msg" | grep -c '^')
+
+# Check if message has more than one line
+if [ "$line_count" -gt 1 ]; then
+  # Check if it's just blank lines after first line
+  first_line=$(echo "$commit_msg" | head -1)
+  rest=$(echo "$commit_msg" | tail -n +2 | tr -d '\n\r\t ' )
+
+  if [ -n "$rest" ]; then
+    echo "❌ Commit message must be a single line"
+    echo "Current message has $line_count lines"
+    exit 1
+  fi
+fi
+
+exit 0

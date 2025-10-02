@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+# Pre-commit hook - add your checks here if needed
+# Currently no pre-commit checks configured
