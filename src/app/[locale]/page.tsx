@@ -9,35 +9,34 @@ import { useTranslations } from 'next-intl';
 
 export default function Home() {
   const t = useTranslations();
-  const projects = ["Projet 1", "Projet 2", "Projet 3"];
+  const projects = [
+    t('projects.project1'),
+    t('projects.project2'),
+    t('projects.project3')
+  ];
 
   return (
     <div className="min-h-screen p-8 sm:p-20 space-y-20">
-      {/* Language Switcher */}
       <div className="fixed top-8 right-8">
         <LanguageSwitcher />
       </div>
 
-      {/* Hero Section */}
       <AnimatedSection className="text-center max-w-3xl mx-auto">
-        <h1 className="text-5xl font-bold mb-4">Némo Kardassevitch</h1>
+        <h1 className="text-5xl font-bold mb-4">{t('hero.name')}</h1>
         <p className="text-xl text-muted-foreground">
           {t('hero.role')}
         </p>
       </AnimatedSection>
 
-      {/* À propos */}
       <AnimatedSection delay={0.2} className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4">À propos</h2>
+        <h2 className="text-3xl font-bold mb-4">{t('about.title')}</h2>
         <p className="text-muted-foreground">
-          Portfolio en construction avec Next.js 15, Tailwind CSS et Framer
-          Motion.
+          {t('about.description')}
         </p>
       </AnimatedSection>
 
-      {/* Projets avec Stagger Animation */}
       <AnimatedSection delay={0.3}>
-        <h2 className="text-3xl font-bold mb-8 text-center">Projets</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">{t('projects.title')}</h2>
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -50,7 +49,7 @@ export default function Home() {
               <AnimatedCard className="p-6 border rounded-lg bg-card hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-semibold mb-2">{project}</h3>
                 <p className="text-sm text-muted-foreground">
-                  Description du projet avec animation scale au hover
+                  {t('projects.description')}
                 </p>
               </AnimatedCard>
             </motion.div>
@@ -58,14 +57,13 @@ export default function Home() {
         </motion.div>
       </AnimatedSection>
 
-      {/* CTA */}
       <AnimatedSection delay={0.4} className="text-center">
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium"
         >
-          Me contacter
+          {t('contact.cta')}
         </motion.button>
       </AnimatedSection>
     </div>

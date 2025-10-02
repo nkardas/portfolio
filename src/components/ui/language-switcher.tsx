@@ -1,10 +1,10 @@
 'use client'
 
-import { useLocale } from 'next-intl'
-import { usePathname, useRouter } from 'next/navigation'
+import { useParams, usePathname, useRouter } from 'next/navigation'
 
 export function LanguageSwitcher() {
-  const locale = useLocale()
+  const params = useParams()
+  const locale = params.locale as string
   const pathname = usePathname()
   const router = useRouter()
 

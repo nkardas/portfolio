@@ -7,11 +7,22 @@
   },
   "hero": {
     "greeting": "Bonjour, je suis",
+    "name": "Némo Kardassevitch",
     "role": "Développeur Full Stack",
     "cta": "Voir mes projets"
   },
-  "common": {
-    "loading": "Chargement...",
-    "error": "Une erreur est survenue"
+  "about": {
+    "title": "À propos",
+    "description": "Portfolio en construction avec Next.js 15, Tailwind CSS et Framer Motion."
+  },
+  "projects": {
+    "title": "Projets",
+    "project1": "Projet 1",
+    "project2": "Projet 2",
+    "project3": "Projet 3",
+    "description": "Description du projet avec animation scale au hover"
+  },
+  "contact": {
+    "cta": "Me contacter"
   }
 }
