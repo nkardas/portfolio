@@ -2,19 +2,27 @@
 
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { AnimatedCard } from "@/components/ui/animated-card";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem } from "@/lib/animations";
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
+  const t = useTranslations();
   const projects = ["Projet 1", "Projet 2", "Projet 3"];
 
   return (
     <div className="min-h-screen p-8 sm:p-20 space-y-20">
+      {/* Language Switcher */}
+      <div className="fixed top-8 right-8">
+        <LanguageSwitcher />
+      </div>
+
       {/* Hero Section */}
       <AnimatedSection className="text-center max-w-3xl mx-auto">
         <h1 className="text-5xl font-bold mb-4">Némo Kardassevitch</h1>
         <p className="text-xl text-muted-foreground">
-          Développeur Full Stack & Étudiant
+          {t('hero.role')}
         </p>
       </AnimatedSection>
 
