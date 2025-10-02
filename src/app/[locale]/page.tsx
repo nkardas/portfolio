@@ -8,14 +8,18 @@ import { useTheme } from "@/components/providers/theme-provider";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem } from "@/lib/animations";
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Home() {
   const t = useTranslations();
   const { theme } = useTheme();
+  const params = useParams();
+  const locale = params.locale as string;
   const projects = [
-    t('projects.project1'),
-    t('projects.project2'),
-    t('projects.project3')
+    { title: t('projects.project1'), description: t('projects.project1Description') },
+    { title: t('projects.project2'), description: t('projects.project2Description') },
+    { title: t('projects.project3'), description: t('projects.project3Description') }
   ];
 
   return (
@@ -44,14 +48,15 @@ export default function Home() {
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
             {t('about.description')}
           </p>
-          <motion.a
-            href="/cv"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block px-8 py-3 border-2 border-primary text-primary rounded-xl font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
-          >
-            {t('about.cvButton')}
-          </motion.a>
+          <Link href={`/${locale}/cv`}>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-3 border-2 border-primary text-primary rounded-xl font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
+            >
+              {t('about.cvButton')}
+            </motion.button>
+          </Link>
         </AnimatedSection>
       </section>
 
@@ -66,18 +71,35 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
             {projects.map((project, i) => (
-              <motion.div key={i} variants={staggerItem}>
-                <AnimatedCard className="group p-8 border border-border rounded-xl bg-card hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+              <motion.div key={i} variants={staggerItem} className="flex">
+                <AnimatedCard className="group p-8 border border-border rounded-xl bg-card hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col h-full">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                     <span className="text-2xl text-primary">0{i + 1}</span>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-4">{project}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {t('projects.description')}
+                  <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed flex-1">
+                    {project.description}
                   </p>
                 </AnimatedCard>
               </motion.div>
             ))}
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+            className="mt-12 text-center"
+          >
+            <Link href={`/${locale}/projects`}>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 border-2 border-primary text-primary rounded-xl font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                {t('projects.viewAll')}
+              </motion.button>
+            </Link>
           </motion.div>
         </AnimatedSection>
       </section>

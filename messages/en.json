@@ -18,11 +18,14 @@
     "cvButton": "View my resume"
   },
   "projects": {
-    "title": "Projects",
-    "project1": "Project 1",
+    "title": "Selected Projects",
+    "viewAll": "View all projects",
+    "project1": "Personal Website",
+    "project1Description": "Personal website built with Next.js 15, i18n and dark mode. Clean design focused on content with Framer Motion animations.",
     "project2": "Project 2",
+    "project2Description": "Project description with scale animation on hover",
     "project3": "Project 3",
-    "description": "Project description with scale animation on hover"
+    "project3Description": "Project description with scale animation on hover"
   },
   "contact": {
     "title": "Let's work together",

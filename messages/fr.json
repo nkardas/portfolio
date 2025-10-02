@@ -18,11 +18,14 @@
     "cvButton": "Voir mon CV"
   },
   "projects": {
-    "title": "Projets",
-    "project1": "Projet 1",
+    "title": "Projets sélectionnés",
+    "viewAll": "Voir tous les projets",
+    "project1": "Site Personnel",
+    "project1Description": "Site personnel conçu avec Next.js 15, i18n et dark mode. Design épuré centré sur le contenu avec animations Framer Motion.",
     "project2": "Projet 2",
+    "project2Description": "Description du projet avec animation scale au hover",
     "project3": "Projet 3",
-    "description": "Description du projet avec animation scale au hover"
+    "project3Description": "Description du projet avec animation scale au hover"
   },
   "contact": {
     "title": "Travaillons ensemble",
