@@ -2,6 +2,7 @@
   "navigation": {
     "home": "Accueil",
     "projects": "Projets",
+    "cv": "CV",
     "about": "À propos",
     "contact": "Contact"
   },
@@ -13,7 +14,8 @@
   },
   "about": {
     "title": "À propos",
-    "description": "Portfolio en construction avec Next.js 15, Tailwind CSS et Framer Motion."
+    "description": "Étudiant ingénieur ISMIN (Mines Saint-Étienne) en microélectronique et informatique. Du système embarqué au développement web/mobile, je m'adapte rapidement aux technologies pour répondre aux besoins métier.",
+    "cvButton": "Voir mon CV"
   },
   "projects": {
     "title": "Projets",
