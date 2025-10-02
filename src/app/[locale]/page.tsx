@@ -4,12 +4,14 @@ import { AnimatedSection } from "@/components/ui/animated-section";
 import { AnimatedCard } from "@/components/ui/animated-card";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { Logo } from "@/components/ui/logo";
+import { useTheme } from "@/components/providers/theme-provider";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem } from "@/lib/animations";
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
   const t = useTranslations();
+  const { theme } = useTheme();
   const projects = [
     t('projects.project1'),
     t('projects.project2'),
@@ -17,11 +19,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen">
-      <div className="fixed top-8 right-8 z-50">
-        <LanguageSwitcher />
-      </div>
-
+    <div className="min-h-screen pt-20">
       <AnimatedSection className="min-h-screen flex flex-col items-center justify-center text-center px-8 -mt-20">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -29,7 +27,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="mb-12"
         >
-          <Logo.LargeAnimated variant="default" theme="light" autoPlay />
+          <Logo.LargeAnimated variant="default" theme={theme} autoPlay />
         </motion.div>
         <p className="text-lg text-muted-foreground mb-4">
           {t('hero.greeting')}
@@ -43,9 +41,17 @@ export default function Home() {
       <section className="py-32 px-8 bg-muted/30">
         <AnimatedSection delay={0.2} className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-6">{t('about.title')}</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
             {t('about.description')}
           </p>
+          <motion.a
+            href="/cv"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block px-8 py-3 border-2 border-primary text-primary rounded-xl font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
+          >
+            {t('about.cvButton')}
+          </motion.a>
         </AnimatedSection>
       </section>
 
@@ -76,7 +82,7 @@ export default function Home() {
         </AnimatedSection>
       </section>
 
-      <section className="py-32 px-8 bg-muted/30">
+      <section id="contact" className="py-32 px-8 bg-muted/30">
         <AnimatedSection delay={0.4} className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-6">{t('contact.title')}</h2>
           <p className="text-lg text-muted-foreground mb-12">
