@@ -8,7 +8,7 @@
   "hero": {
     "greeting": "Bonjour, je suis",
     "name": "Némo Kardassevitch",
-    "role": "Développeur Full Stack",
+    "role": "Software Engineer",
     "cta": "Voir mes projets"
   },
   "about": {
@@ -23,6 +23,8 @@
     "description": "Description du projet avec animation scale au hover"
   },
   "contact": {
+    "title": "Travaillons ensemble",
+    "description": "Un projet en tête ? Discutons de vos besoins et voyons comment je peux vous aider.",
     "cta": "Me contacter"
   }
 }

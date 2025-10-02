@@ -8,7 +8,7 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Némo Kardassevitch",
-    "role": "Full Stack Developer",
+    "role": "Software Engineer",
     "cta": "View my projects"
   },
   "about": {
@@ -23,6 +23,8 @@
     "description": "Project description with scale animation on hover"
   },
   "contact": {
+    "title": "Let's work together",
+    "description": "Have a project in mind? Let's discuss your needs and see how I can help.",
     "cta": "Contact me"
   }
 }
