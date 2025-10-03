@@ -1,0 +1,520 @@
+{
+  "basics": {
+    "name": "Némo Kardassevitch",
+    "headline": "Software & Electronics Engineer",
+    "email": "contact@nkardas.fr",
+    "phone": "+33 7 83 39 94 70",
+    "location": "France",
+    "url": {
+      "label": "nkardas.fr",
+      "href": "https://nkardas.fr"
+    },
+    "customFields": [],
+    "picture": {
+      "url": "",
+      "size": 64,
+      "aspectRatio": 1,
+      "borderRadius": 0,
+      "effects": {
+        "hidden": false,
+        "border": false,
+        "grayscale": false
+      }
+    }
+  },
+  "sections": {
+    "summary": {
+      "name": "Summary",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "summary",
+      "content": "<p>Future ISMIN engineer combining software development and electronic design. Experience in complex business applications, integrated circuits, and embedded systems.</p>"
+    },
+    "awards": {
+      "name": "Awards",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "awards",
+      "items": []
+    },
+    "certifications": {
+      "name": "Certifications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "certifications",
+      "items": [
+        {
+          "id": "mpkbegeb4zfu3oo7420rw512",
+          "visible": true,
+          "name": "Driver's License B",
+          "issuer": "",
+          "date": "2020",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "t5gh4qbk1hrvwyfshtxjfxwv",
+          "visible": true,
+          "name": "First Aid Certificate (PSC1)",
+          "issuer": "",
+          "date": "2019",
+          "summary": "<p>First aid training</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "po0o9pm1fdyyqcqd4zomb0a2",
+          "visible": true,
+          "name": "Aviation Initiation Certificate (BIA)",
+          "issuer": "",
+          "date": "2018",
+          "summary": "<p>With honors</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "education": {
+      "name": "Education",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "education",
+      "items": [
+        {
+          "id": "zjcr1mbrow8pjonivsdktdgl",
+          "visible": true,
+          "institution": "Seoul National University (SNU)",
+          "studyType": "Exchange Program",
+          "area": "Electrical & Computer Engineering Department",
+          "score": "",
+          "date": "September 2025 - December 2025",
+          "summary": "<p>Graduate-level courses: IC Design & Verification, Bioelectronics, Database Systems.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "ddnskns476t6ai5y4t5scodu",
+          "visible": true,
+          "institution": "Mines Saint-Étienne",
+          "studyType": "Engineering Degree",
+          "area": "ISMIN (Microelectronics and Computer Science)",
+          "score": "",
+          "date": "September 2023 - August 2026",
+          "summary": "<p>Specialization in microelectronics and computer science. Projects: Complete ECG, ASCON128 Verilog implementation.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "ll4r7y6n0fazg0cjkcf3zm20",
+          "visible": false,
+          "institution": "Lycée Joffre",
+          "studyType": "Preparatory Classes",
+          "area": "MPSI/MP (Mathematics, Physics and Engineering Sciences)",
+          "score": "",
+          "date": "September 2020 - August 2023",
+          "summary": "<p>Intensive training preparing for engineering school entrance exams. Rigorous program in advanced mathematics, fundamental and applied physics, engineering sciences, and computer science. Development of scientific rigor and complex problem-solving methods. Result: Admission to Mines Saint-Étienne.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "name": "Experience",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "experience",
+      "items": [
+        {
+          "id": "qmoiw9xwbsv8pdobbtu49ez4",
+          "visible": true,
+          "company": "Freelance",
+          "position": "Software Engineer Freelance",
+          "location": "Remote from Seoul",
+          "date": "September 2025 - Present",
+          "summary": "<p>Development of modern web applications and complex application ecosystems (React, Next.js, Node.js).</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "rspb1gsjnhwf81zqc0vf8ubn",
+          "visible": true,
+          "company": "SPYGEN",
+          "position": "Full-Stack Developer - Internship",
+          "location": "Le Bourget-du-Lac, France",
+          "date": "April 2025 - August 2025",
+          "summary": "<p>Development of a complete LIMS for environmental DNA analysis laboratory (React, NestJS, PostgreSQL, Docker).</p>",
+          "url": {
+            "label": "",
+            "href": "https://www.spygen.com"
+          }
+        },
+        {
+          "id": "t3z5zmbpjjctkqyjpjhkmv07",
+          "visible": true,
+          "company": "KORA HIGH FIDELITY",
+          "position": "Development Engineer - Internship",
+          "location": "Portet-Sur-Garonne, France",
+          "date": "January 2024 - February 2024",
+          "summary": "<p>R&D for high-fidelity audio equipment. Product testing and validation.</p>",
+          "url": {
+            "label": "",
+            "href": "https://kora.fr/en/homepage/"
+          }
+        },
+        {
+          "id": "wiwiin1xrzz7iq5jy883yh34",
+          "visible": true,
+          "company": "ANFR (National Frequency Agency)",
+          "position": "Radiofrequency Technician - Student Job",
+          "location": "Marseille & Paris, France",
+          "date": "July 2024 - August 2024",
+          "summary": "<p>Radio frequency monitoring and control during the 2024 Olympics (Marseille & Paris).</p>",
+          "url": {
+            "label": "",
+            "href": "https://www.anfr.fr/accueil"
+          }
+        },
+        {
+          "id": "x4rli7ouyctd7jgdao80cede",
+          "visible": false,
+          "company": "Municipality of La Couvertoirade",
+          "position": "Municipal Employee - Student Job",
+          "location": "La Couvertoirade, France",
+          "date": "August 2022",
+          "summary": "<p>Seasonal employment in the service of the local community with responsibilities in urban management. Organization and management of parking areas. Participation in welcoming and guiding visitors.</p>",
+          "url": {
+            "label": "",
+            "href": "https://lacouvertoirade.com"
+          }
+        }
+      ]
+    },
+    "volunteer": {
+      "name": "Volunteer Experience",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "volunteer",
+      "items": [
+        {
+          "id": "gn1ld5nkg847k4vowb435sy5",
+          "visible": true,
+          "organization": "BDE EMSE CGCP",
+          "position": "President",
+          "location": "Mines Saint-Étienne, Provence Campus (Gardanne)",
+          "date": "March 2024 - April 2025",
+          "summary": "<p>Student association management. Budget management, events, and team leadership.</p>",
+          "url": {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/bde-emse-ismin/"
+          }
+        },
+        {
+          "id": "q600la8ypzlz0d8kr8puz35k",
+          "visible": false,
+          "organization": "Music Band",
+          "position": "Co-founder",
+          "location": "Millau, France",
+          "date": "2014 - 2019",
+          "summary": "<p>Co-creation and management of a music band over 5 years. Composition, artistic management, commercial prospecting, and complete logistical organization of concerts.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "d2odkt7khf3vzimg6jbk295r",
+          "visible": false,
+          "organization": "Lycée Jean Vigo",
+          "position": "Elected Student Representative",
+          "location": "Millau, France",
+          "date": "2013 - 2019",
+          "summary": "<p>6-year associative commitment: Board of Directors, Student Life Council, class delegate. Participation in budgetary decisions and improvement of school life.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "interests": {
+      "name": "Interests",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "interests",
+      "items": [
+        {
+          "id": "kjtlloxle94tj3bh4ckksv5b",
+          "visible": true,
+          "name": "Music",
+          "keywords": [
+            "Violin",
+            "Guitar",
+            "Saxophone",
+            "Piano"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "name": "Languages",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "languages",
+      "items": [
+        {
+          "id": "c9ffkh6e6kmmdjxr4oibgvj9",
+          "visible": true,
+          "name": "French",
+          "description": "Native",
+          "level": 0
+        },
+        {
+          "id": "wav4xajy9eljrgzopx32r5r6",
+          "visible": true,
+          "name": "English",
+          "description": "Fluent (TOEIC 955)",
+          "level": 0
+        },
+        {
+          "id": "o6bwut1j7ygkwy8okxewpagr",
+          "visible": true,
+          "name": "Chinese",
+          "description": "Intermediate",
+          "level": 0
+        }
+      ]
+    },
+    "profiles": {
+      "name": "Profiles",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "profiles",
+      "items": [
+        {
+          "id": "qt05nyr19tz6s4dc02pokf7n",
+          "visible": true,
+          "network": "LinkedIn",
+          "username": "nemokardassevitch",
+          "icon": "linkedin",
+          "url": {
+            "label": "",
+            "href": "https://www.linkedin.com/in/nemokardassevitch/"
+          }
+        },
+        {
+          "id": "mar179h1llr00wr7vktba9ns",
+          "visible": true,
+          "network": "GitHub",
+          "username": "nkardas",
+          "icon": "github",
+          "url": {
+            "label": "",
+            "href": "https://github.com/nkardas"
+          }
+        }
+      ]
+    },
+    "projects": {
+      "name": "Projects",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "projects",
+      "items": []
+    },
+    "publications": {
+      "name": "Publications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "publications",
+      "items": []
+    },
+    "references": {
+      "name": "References",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "references",
+      "items": []
+    },
+    "skills": {
+      "name": "Skills",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "hnuladrk8dk609ebrembu4g1",
+          "visible": true,
+          "name": "Programming Languages",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "JavaScript",
+            "TypeScript",
+            "Python",
+            "C/C++",
+            "PHP",
+            "SQL",
+            "Verilog",
+            "HTML/CSS",
+            "Swift"
+          ]
+        },
+        {
+          "id": "bhjwn7p598fqlg3vxek4o7rh",
+          "visible": true,
+          "name": "Frameworks & Web Technologies",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "React",
+            "Next.js",
+            "NestJS",
+            "Node.js",
+            "PostgreSQL",
+            "Docker",
+            "Git",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "mgy5ioy2bs2ipw7uckd3h100",
+          "visible": true,
+          "name": "Electronics & Embedded Systems",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Integrated circuit design",
+            "PCB Design",
+            "Arduino",
+            "STM32",
+            "Embedded systems",
+            "Verilog",
+            "Bioelectronics",
+            "Audio electronics"
+          ]
+        },
+        {
+          "id": "jnotc7d4tb241x93yzfybk8b",
+          "visible": true,
+          "name": "Tools & Environments",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "VS Code",
+            "IntelliJ IDEA",
+            "Git",
+            "GitHub",
+            "GitLab",
+            "Linux",
+            "macOS",
+            "KiCad",
+            "SPICE",
+            "ModelSim",
+            "Oscilloscope",
+            "Spectrum analyzers"
+          ]
+        },
+        {
+          "id": "mqm32uwmk4rsavsybd01mdxp",
+          "visible": false,
+          "name": "Methodologies & Management",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Agile",
+            "Object-oriented programming",
+            "REST API",
+            "Project management",
+            "Leadership",
+            "Team management",
+            "Business analysis"
+          ]
+        }
+      ]
+    },
+    "custom": {}
+  },
+  "metadata": {
+    "template": "glalie",
+    "layout": [
+      [
+        [
+          "summary",
+          "experience",
+          "education",
+          "projects",
+          "volunteer",
+          "references"
+        ],
+        [
+          "profiles",
+          "skills",
+          "interests",
+          "certifications",
+          "awards",
+          "publications",
+          "languages"
+        ]
+      ]
+    ],
+    "css": {
+      "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "margin": 18,
+      "format": "a4",
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "theme": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "primary": "#57534e"
+    },
+    "typography": {
+      "font": {
+        "family": "IBM Plex Serif",
+        "subset": "latin",
+        "variants": [
+          "regular"
+        ],
+        "size": 14
+      },
+      "lineHeight": 1.5,
+      "hideIcons": false,
+      "underlineLinks": true
+    },
+    "notes": ""
+  }
+}
