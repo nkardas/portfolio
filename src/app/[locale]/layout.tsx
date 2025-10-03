@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Némo Kardassevitch • Développeur Full Stack",
-  description: "Portfolio et CV de Némo Kardassevitch - Développeur Full Stack & Étudiant. Passionné par les technologies web modernes.",
+  title: "Némo Kardassevitch",
+  description: "Portfolio et CV de Némo Kardassevitch - Ingénieur Logiciel & Électronique",
 };
 
 export function generateStaticParams() {
