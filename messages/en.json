@@ -9,7 +9,7 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Némo Kardassevitch",
-    "role": "Software Engineer",
+    "role": "Software & Electronics Engineer",
     "cta": "View my projects"
   },
   "about": {
@@ -31,5 +31,91 @@
     "title": "Let's work together",
     "description": "Have a project in mind? Let's discuss your needs and see how I can help.",
     "cta": "Contact me"
+  },
+  "cv": {
+    "title": "Curriculum Vitae",
+    "downloadPdf": "Download PDF",
+    "contact": {
+      "email": "contact@nkardas.fr",
+      "phone": "+33 7 83 39 94 70",
+      "location": "France",
+      "github": "github.com/nkardas",
+      "linkedin": "linkedin.com/in/nemokardassevitch"
+    },
+    "education": {
+      "title": "Education",
+      "snu": {
+        "degree": "Exchange Program - Electrical & Computer Engineering",
+        "school": "Seoul National University",
+        "period": "Sept. 2025 - Dec. 2025",
+        "description": "Graduate-level courses: IC Design & Verification, Bioelectronics, Database Systems"
+      },
+      "ismin": {
+        "degree": "Engineering Degree in ISMIN",
+        "school": "Mines Saint-Étienne",
+        "period": "Sept. 2023 - Aug. 2026",
+        "description": "Specialization in microelectronics and computer science. Projects: Complete ECG, ASCON128 Verilog implementation"
+      },
+      "prepa": {
+        "degree": "MPSI/MP - Preparatory Classes",
+        "school": "Lycée Joffre",
+        "period": "2020 - 2023",
+        "description": "Intensive training in mathematics, physics and engineering sciences"
+      }
+    },
+    "experience": {
+      "title": "Experience",
+      "freelance": {
+        "title": "Software Engineer Freelance",
+        "company": "Self-Employed",
+        "period": "Sept. 2025 - Present",
+        "location": "Remote from Seoul",
+        "description": "Development of modern web applications and complex application ecosystems"
+      },
+      "spygen": {
+        "title": "Full-Stack Developer",
+        "company": "SPYGEN",
+        "period": "Apr. 2025 - Aug. 2025",
+        "location": "Le Bourget-du-Lac, France",
+        "description": "Development of a complete LIMS for environmental DNA analysis laboratory"
+      },
+      "bde": {
+        "title": "President",
+        "company": "BDE EMSE CGCP",
+        "period": "Mar. 2024 - Apr. 2025",
+        "location": "Gardanne, France",
+        "description": "Student association management. Budget management, event organization, team leadership and institutional representation"
+      },
+      "anfr": {
+        "title": "Radiofrequency Technician",
+        "company": "ANFR - National Frequency Agency",
+        "period": "Jul. 2024 - Aug. 2024",
+        "location": "Marseille & Paris, France",
+        "description": "Temporary mission during the 2024 Olympics. Radio frequency monitoring and control during Olympic events"
+      },
+      "kora": {
+        "title": "Development Engineer",
+        "company": "KORA HIGH FIDELITY",
+        "period": "Jan. 2024 - Feb. 2024",
+        "location": "Portet-Sur-Garonne, France",
+        "description": "R&D for high-fidelity audio equipment, design processes and validation"
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "programming": "Programming Languages",
+      "webFrameworks": "Web & Frameworks",
+      "embedded": "Electronics & Embedded",
+      "tools": "Tools & Other"
+    },
+    "languages": {
+      "title": "Languages",
+      "french": "French",
+      "frenchLevel": "Native",
+      "english": "English",
+      "englishLevel": "Fluent (TOEIC 955)",
+      "chinese": "Chinese",
+      "chineseLevel": "Intermediate"
+    }
   }
 }
