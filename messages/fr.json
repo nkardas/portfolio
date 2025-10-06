@@ -19,13 +19,50 @@
   },
   "projects": {
     "title": "Projets sélectionnés",
+    "allProjectsTitle": "Portfolio",
     "viewAll": "Voir tous les projets",
+    "categories": {
+      "all": "Tous",
+      "web": "Web & Mobile",
+      "electronics": "Électronique",
+      "school": "Projets Scolaires",
+      "personal": "Projets Personnels"
+    },
+    "viewProject": "Voir le projet",
+    "externalLink": "Lien externe",
+    "backToProjects": "Retour aux projets",
     "project1": "Site Personnel",
     "project1Description": "Site personnel conçu avec Next.js 15, i18n et dark mode. Design épuré centré sur le contenu avec animations Framer Motion.",
     "project2": "Projet 2",
     "project2Description": "Description du projet avec animation scale au hover",
     "project3": "Projet 3",
     "project3Description": "Description du projet avec animation scale au hover"
+  },
+  "projectsList": {
+    "personal-website": {
+      "title": "nkardas.fr",
+      "description": "Portfolio personnel avec Next.js 15, React 19 et Tailwind CSS v4. Design minimaliste avec mode sombre et internationalisation."
+    },
+    "project-placeholder-1": {
+      "title": "Projet Électronique",
+      "description": "Description d'un projet électronique avec circuits intégrés et systèmes embarqués."
+    },
+    "project-placeholder-2": {
+      "title": "Projet Scolaire",
+      "description": "Description d'un projet réalisé dans le cadre de mes études à l'école d'ingénieurs."
+    },
+    "project-placeholder-3": {
+      "title": "Application Web",
+      "description": "Description d'une application web moderne avec stack JavaScript complète."
+    },
+    "project-placeholder-4": {
+      "title": "Projet Personnel",
+      "description": "Description d'un projet personnel explorant de nouvelles technologies."
+    },
+    "project-placeholder-5": {
+      "title": "Système Embarqué",
+      "description": "Description d'un projet de système embarqué avec microcontrôleur et capteurs."
+    }
   },
   "contact": {
     "title": "Travaillons ensemble",

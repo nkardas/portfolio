@@ -1,0 +1,15 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#09090B"/>
+  <g opacity="0.1">
+    <line x1="0" y1="168.75" x2="1200" y2="168.75" stroke="#52525B" stroke-width="1"/>
+    <line x1="0" y1="337.5" x2="1200" y2="337.5" stroke="#52525B" stroke-width="1"/>
+    <line x1="0" y1="506.25" x2="1200" y2="506.25" stroke="#52525B" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="675" stroke="#52525B" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="675" stroke="#52525B" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="675" stroke="#52525B" stroke-width="1"/>
+  </g>
+  <text x="600" y="320" font-family="monospace" font-size="48" font-weight="600" fill="#FAFAFA" text-anchor="middle" letter-spacing="-0.02em">
+    <tspan fill="#FAFAFA">n</tspan><tspan fill="#9F8DCB">K</tspan>
+  </text>
+  <text x="600" y="370" font-family="monospace" font-size="20" fill="#71717A" text-anchor="middle">nkardas.fr</text>
+</svg>

@@ -19,13 +19,50 @@
   },
   "projects": {
     "title": "Selected Projects",
+    "allProjectsTitle": "Portfolio",
     "viewAll": "View all projects",
+    "categories": {
+      "all": "All",
+      "web": "Web & Mobile",
+      "electronics": "Electronics",
+      "school": "School Projects",
+      "personal": "Personal Projects"
+    },
+    "viewProject": "View project",
+    "externalLink": "External link",
+    "backToProjects": "Back to projects",
     "project1": "Personal Website",
     "project1Description": "Personal website built with Next.js 15, i18n and dark mode. Clean design focused on content with Framer Motion animations.",
     "project2": "Project 2",
     "project2Description": "Project description with scale animation on hover",
     "project3": "Project 3",
     "project3Description": "Project description with scale animation on hover"
+  },
+  "projectsList": {
+    "personal-website": {
+      "title": "nkardas.fr",
+      "description": "Personal portfolio with Next.js 15, React 19 and Tailwind CSS v4. Minimalist design with dark mode and internationalization."
+    },
+    "project-placeholder-1": {
+      "title": "Electronics Project",
+      "description": "Description of an electronics project with integrated circuits and embedded systems."
+    },
+    "project-placeholder-2": {
+      "title": "School Project",
+      "description": "Description of a project completed as part of my engineering studies."
+    },
+    "project-placeholder-3": {
+      "title": "Web Application",
+      "description": "Description of a modern web application with full JavaScript stack."
+    },
+    "project-placeholder-4": {
+      "title": "Personal Project",
+      "description": "Description of a personal project exploring new technologies."
+    },
+    "project-placeholder-5": {
+      "title": "Embedded System",
+      "description": "Description of an embedded system project with microcontroller and sensors."
+    }
   },
   "contact": {
     "title": "Let's work together",
