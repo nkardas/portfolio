@@ -178,3 +178,212 @@
     @apply bg-muted px-1.5 py-0.5 rounded text-sm;
   }
 }
+
+/* Markdown Content Styles */
+.markdown-content {
+  @apply text-base leading-relaxed;
+}
+
+.markdown-content > * + * {
+  margin-top: 1.5rem;
+}
+
+.markdown-content h1 {
+  @apply text-5xl font-bold tracking-tight mt-16 mb-8;
+}
+
+.markdown-content h2 {
+  @apply text-3xl font-bold tracking-tight mt-16 mb-6;
+}
+
+.markdown-content h3 {
+  @apply text-xl font-semibold tracking-tight mt-10 mb-4;
+}
+
+.markdown-content h4 {
+  @apply text-lg font-semibold mt-8 mb-3;
+}
+
+.markdown-content p {
+  @apply my-6 leading-relaxed text-base;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  @apply my-6 ml-6 space-y-2;
+}
+
+.markdown-content li {
+  @apply leading-relaxed text-base;
+}
+
+.markdown-content ul li {
+  @apply list-disc;
+}
+
+.markdown-content ol li {
+  @apply list-decimal;
+}
+
+.markdown-content a {
+  @apply text-primary no-underline hover:underline;
+}
+
+.markdown-content strong {
+  @apply font-semibold text-foreground;
+}
+
+.markdown-content code {
+  @apply text-primary bg-primary/5 px-2 py-1 rounded-md text-sm;
+}
+
+.markdown-content pre {
+  @apply my-6 p-4 bg-muted border border-border rounded-lg overflow-x-auto;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent p-0 text-sm;
+}
+
+.markdown-content blockquote {
+  @apply my-6 pl-4 border-l-4 border-primary italic text-muted-foreground;
+}
+
+.markdown-content hr {
+  @apply my-8 border-border;
+}
+
+/* Retro Mode Styles */
+.retro-mode {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.retro-mode * {
+  font-family: 'Courier New', monospace !important;
+  font-weight: bold !important;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.retro-mode body {
+  background: #000 !important;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(139, 122, 184, 0.03) 2px,
+      rgba(139, 122, 184, 0.03) 4px
+    );
+  animation: scanlines 8s linear infinite;
+}
+
+@keyframes scanlines {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.retro-mode button,
+.retro-mode a,
+.retro-mode .card,
+.retro-mode [class*="border"] {
+  border-width: 4px !important;
+  border-style: solid !important;
+  border-radius: 0 !important;
+  box-shadow:
+    4px 4px 0 rgba(0, 0, 0, 0.5),
+    inset -2px -2px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.retro-mode * {
+  transition: none !important;
+  animation-duration: 0.1s !important;
+}
+
+/* Retro color palette */
+.retro-mode {
+  --background: oklch(0.15 0 0);
+  --foreground: oklch(1 0 0);
+  --primary: oklch(0.7 0.15 290);
+  --primary-foreground: oklch(0.15 0 0);
+  --card: oklch(0.2 0 0);
+  --muted: oklch(0.25 0 0);
+  --border: oklch(0.7 0.15 290);
+}
+
+.retro-mode img,
+.retro-mode svg {
+  filter: contrast(1.2) saturate(1.5);
+  image-rendering: pixelated;
+}
+
+/* Violet Intensity Mode */
+.violet-mode {
+  --primary: oklch(0.75 0.2 290);
+  --primary-foreground: oklch(0.95 0 0);
+  --background: oklch(0.12 0.05 290);
+  --foreground: oklch(0.95 0.05 290);
+  --card: oklch(0.18 0.08 290);
+  --muted: oklch(0.22 0.1 290);
+  --border: oklch(0.6 0.15 290);
+}
+
+.violet-mode {
+  background: radial-gradient(circle at 50% 0%, oklch(0.2 0.15 290), oklch(0.12 0.05 290)) !important;
+}
+
+.violet-mode * {
+  text-shadow: 0 0 10px rgba(159, 141, 203, 0.5);
+}
+
+.violet-mode button,
+.violet-mode a {
+  box-shadow: 0 0 20px rgba(159, 141, 203, 0.4) !important;
+}
+
+.violet-mode [class*="border"] {
+  border-color: oklch(0.7 0.2 290) !important;
+  box-shadow:
+    0 0 20px rgba(159, 141, 203, 0.3),
+    inset 0 0 20px rgba(159, 141, 203, 0.1) !important;
+}
+
+/* Floating particles */
+.violet-mode::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(159, 141, 203, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(159, 141, 203, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(159, 141, 203, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+  animation: violetPulse 4s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes violetPulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.violet-mode img,
+.violet-mode svg {
+  filter: hue-rotate(10deg) saturate(1.3) brightness(1.1);
+}
+
+/* Glow effect on hover */
+.violet-mode button:hover,
+.violet-mode a:hover {
+  box-shadow: 0 0 30px rgba(159, 141, 203, 0.8) !important;
+  transform: translateY(-2px);
+}
