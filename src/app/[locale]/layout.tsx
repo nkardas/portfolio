@@ -6,6 +6,12 @@ import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { Header } from '@/components/layout/header';
 import { ThemeProvider } from '@/components/providers/theme-provider';
+import { EasterEggProvider } from '@/components/easter-egg/easter-egg-provider';
+import { SnakeProvider } from '@/components/games/snake-provider';
+import { RetroModeProvider } from '@/components/retro-mode-provider';
+import { VioletModeProvider } from '@/components/violet-mode-provider';
+import { AchievementsProvider } from '@/components/achievements/achievements-provider';
+import { ConsoleInit } from '@/components/console-init';
 import "../globals.css";
 
 const geistMono = Geist_Mono({
@@ -39,8 +45,14 @@ export default async function LocaleLayout({
       <body className={`${geistMono.variable} font-mono antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
+            <ConsoleInit />
+            <RetroModeProvider />
+            <VioletModeProvider />
+            <AchievementsProvider />
             <Header />
             {children}
+            <EasterEggProvider />
+            <SnakeProvider />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
