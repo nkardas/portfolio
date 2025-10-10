@@ -21,8 +21,79 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Némo Kardassevitch",
-  description: "Portfolio et CV de Némo Kardassevitch - Ingénieur Logiciel & Électronique",
+  metadataBase: new URL('https://nkardas.fr'),
+  title: {
+    default: "Némo Kardassevitch - Ingénieur Logiciel & Électronique",
+    template: "%s | Némo Kardassevitch"
+  },
+  description: "Étudiant ingénieur ISMIN à l'École des Mines de Saint-Étienne, spécialisé en microélectronique et informatique. Du système embarqué au développement web/mobile fullstack.",
+  keywords: [
+    "Némo Kardassevitch",
+    "nkardas",
+    "ingénieur logiciel",
+    "développeur fullstack",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "électronique",
+    "systèmes embarqués",
+    "ISMIN",
+    "Mines Saint-Étienne",
+    "freelance",
+    "portfolio"
+  ],
+  authors: [{ name: "Némo Kardassevitch", url: "https://nkardas.fr" }],
+  creator: "Némo Kardassevitch",
+  publisher: "Némo Kardassevitch",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    alternateLocale: ["en_US"],
+    url: "https://nkardas.fr",
+    siteName: "Némo Kardassevitch",
+    title: "Némo Kardassevitch - Ingénieur Logiciel & Électronique",
+    description: "Portfolio et projets d'un ingénieur fullstack passionné par la tech et l'innovation",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Némo Kardassevitch - Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Némo Kardassevitch - Ingénieur Logiciel & Électronique",
+    description: "Portfolio et projets d'un ingénieur fullstack passionné par la tech et l'innovation",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon.svg", type: "image/svg+xml", sizes: "any" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export function generateStaticParams() {

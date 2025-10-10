@@ -1,0 +1,10 @@
+# robots.txt for nkardas.fr
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nkardas.fr/sitemap.xml
+
+# Crawl delay (optional - 1 second)
+Crawl-delay: 1
