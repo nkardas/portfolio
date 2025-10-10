@@ -4,12 +4,13 @@ import { useEffect, useState } from "react";
 import { useAchievements } from "@/hooks/use-achievements";
 import { AchievementToast } from "./achievement-toast";
 import { AchievementsModal } from "./achievements-modal";
+import { AchievementId } from "@/types/achievement";
 
 export function AchievementsProvider() {
   const { achievements, unlockAchievement } = useAchievements();
   const [showModal, setShowModal] = useState(false);
-  const [toastQueue, setToastQueue] = useState<string[]>([]);
-  const [currentToast, setCurrentToast] = useState<string | null>(null);
+  const [toastQueue, setToastQueue] = useState<AchievementId[]>([]);
+  const [currentToast, setCurrentToast] = useState<AchievementId | null>(null);
 
   // Unlock first_visit on mount
   useEffect(() => {
@@ -19,7 +20,7 @@ export function AchievementsProvider() {
   // Listen for achievement unlocks
   useEffect(() => {
     const handleAchievement = (event: CustomEvent) => {
-      const achievementId = event.detail.id;
+      const achievementId = event.detail.id as AchievementId;
       const achievement = achievements[achievementId];
 
       if (achievement && !achievement.unlocked) {
@@ -27,8 +28,8 @@ export function AchievementsProvider() {
       }
     };
 
-    window.addEventListener("unlock-achievement" as any, handleAchievement);
-    return () => window.removeEventListener("unlock-achievement" as any, handleAchievement);
+    window.addEventListener("unlock-achievement", handleAchievement as EventListener);
+    return () => window.removeEventListener("unlock-achievement", handleAchievement as EventListener);
   }, [achievements]);
 
   // Process toast queue
@@ -46,9 +47,9 @@ export function AchievementsProvider() {
       setShowModal(true);
     };
 
-    (window as any).openAchievements = handleOpenAchievements;
+    (window as Window & { openAchievements?: () => void }).openAchievements = handleOpenAchievements;
     return () => {
-      delete (window as any).openAchievements;
+      delete (window as Window & { openAchievements?: () => void }).openAchievements;
     };
   }, []);
 

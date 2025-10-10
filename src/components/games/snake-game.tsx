@@ -260,7 +260,7 @@ export function SnakeGame({ isOpen, onClose }: SnakeGameProps) {
                   {/* Instructions */}
                   <div className="text-center text-xs text-muted-foreground space-y-1">
                     <p>← → ↑ ↓ to move | Eat green dots to grow</p>
-                    <p>Don't hit the walls or yourself!</p>
+                    <p>Don&apos;t hit the walls or yourself!</p>
                   </div>
                 </div>
               </div>

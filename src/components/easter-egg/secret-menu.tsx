@@ -38,6 +38,7 @@ export function SecretMenu({ isActive, onClose, onLaunchSnake }: SecretMenuProps
         onClose();
       },
       color: "from-green-500 to-emerald-600",
+      disabled: false,
     },
     {
       icon: Palette,
@@ -51,6 +52,7 @@ export function SecretMenu({ isActive, onClose, onLaunchSnake }: SecretMenuProps
         console.log(`🕹️ Retro Mode ${isRetroMode ? "disabled" : "enabled"}!`);
       },
       color: "from-orange-500 to-red-600",
+      disabled: false,
     },
     {
       icon: Sparkles,
@@ -64,18 +66,21 @@ export function SecretMenu({ isActive, onClose, onLaunchSnake }: SecretMenuProps
         console.log(`💜 Violet Intensity ${isVioletMode ? "disabled" : "enabled"}!`);
       },
       color: "from-purple-500 to-pink-600",
+      disabled: false,
     },
     {
       icon: Award,
       label: "Achievements",
       description: "View your unlocked achievements",
       action: () => {
-        if (typeof (window as any).openAchievements === "function") {
-          (window as any).openAchievements();
+        const win = window as Window & { openAchievements?: () => void };
+        if (typeof win.openAchievements === "function") {
+          win.openAchievements();
         }
         onClose();
       },
       color: "from-yellow-500 to-orange-600",
+      disabled: false,
     },
     {
       icon: Volume2,
@@ -87,6 +92,7 @@ export function SecretMenu({ isActive, onClose, onLaunchSnake }: SecretMenuProps
         console.log(`🔊 Sound Effects ${isSoundEnabled ? "disabled" : "enabled"}!`);
       },
       color: "from-blue-500 to-cyan-600",
+      disabled: false,
     },
   ];
 
@@ -189,7 +195,7 @@ export function SecretMenu({ isActive, onClose, onLaunchSnake }: SecretMenuProps
               {/* Footer */}
               <div className="p-6 border-t border-primary/20 text-center">
                 <p className="text-xs text-muted-foreground italic">
-                  "With great power comes great easter eggs" 🥚
+                  &quot;With great power comes great easter eggs&quot; 🥚
                 </p>
               </div>
             </div>

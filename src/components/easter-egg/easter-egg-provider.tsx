@@ -7,8 +7,9 @@ export function EasterEggProvider() {
   const { isActive, reset } = useKonamiCode();
 
   const handleLaunchSnake = () => {
-    if (typeof (window as any).openSnake === "function") {
-      (window as any).openSnake();
+    const win = window as Window & { openSnake?: () => void };
+    if (typeof win.openSnake === "function") {
+      win.openSnake();
     }
   };
 

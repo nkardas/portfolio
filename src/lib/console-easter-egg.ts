@@ -119,8 +119,9 @@ export function initConsoleEasterEgg() {
       console.log("%c🐍 Starting Snake Game...", styles.title);
       console.log("");
 
-      if (typeof (window as any).openSnake === "function") {
-        (window as any).openSnake();
+      const win = window as Window & { openSnake?: () => void };
+      if (typeof win.openSnake === "function") {
+        win.openSnake();
         console.log("%cGame opened! Use arrow keys to play.", styles.text);
       } else {
         console.log("%cError: Game not loaded yet. Try again in a moment.", styles.text);
@@ -132,8 +133,9 @@ export function initConsoleEasterEgg() {
       console.log("%c🏆 Opening Achievements...", styles.title);
       console.log("");
 
-      if (typeof (window as any).openAchievements === "function") {
-        (window as any).openAchievements();
+      const win = window as Window & { openAchievements?: () => void };
+      if (typeof win.openAchievements === "function") {
+        win.openAchievements();
         console.log("%cAchievements panel opened!", styles.text);
       } else {
         console.log("%cError: Achievements not loaded yet. Try again in a moment.", styles.text);
@@ -158,7 +160,7 @@ export function initConsoleEasterEgg() {
   };
 
   // Attach to window
-  (window as any).nk = commands;
+  (window as Window & { nk?: typeof commands }).nk = commands;
 
   // Footer
   console.log("%c─".repeat(50), "color: #27272A;");

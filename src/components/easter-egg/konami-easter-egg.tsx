@@ -138,7 +138,7 @@ export function KonamiEasterEgg({ isActive, onClose }: KonamiEasterEggProps) {
 
                   <div className="pt-4">
                     <p className="text-sm text-muted-foreground italic">
-                      "In a world of 0s and 1s, be the undefined value."
+                      &quot;In a world of 0s and 1s, be the undefined value.&quot;
                     </p>
                   </div>
                 </div>

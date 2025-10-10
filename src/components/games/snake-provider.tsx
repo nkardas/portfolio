@@ -8,12 +8,12 @@ export function SnakeProvider() {
 
   useEffect(() => {
     // Expose the snake command globally
-    (window as any).openSnake = () => {
+    (window as Window & { openSnake?: () => void }).openSnake = () => {
       setIsOpen(true);
     };
 
     return () => {
-      delete (window as any).openSnake;
+      delete (window as Window & { openSnake?: () => void }).openSnake;
     };
   }, []);
 

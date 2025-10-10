@@ -18,31 +18,28 @@ const KONAMI_CODE = [
 
 export function useKonamiCode() {
   const [isActive, setIsActive] = useState(false);
-  const [keys, setKeys] = useState<string[]>([]);
   const { playSound } = useSound();
 
   useEffect(() => {
+    let keys: string[] = [];
+
     const handleKeyDown = (e: KeyboardEvent) => {
-      setKeys((prevKeys) => {
-        const newKeys = [...prevKeys, e.key];
+      keys = [...keys, e.key];
 
-        // Keep only the last 10 keys
-        if (newKeys.length > KONAMI_CODE.length) {
-          newKeys.shift();
-        }
+      // Keep only the last 10 keys
+      if (keys.length > KONAMI_CODE.length) {
+        keys.shift();
+      }
 
-        // Check if the sequence matches
-        if (
-          newKeys.length === KONAMI_CODE.length &&
-          newKeys.every((key, index) => key === KONAMI_CODE[index])
-        ) {
-          playSound("konami");
-          setIsActive(true);
-          return [];
-        }
-
-        return newKeys;
-      });
+      // Check if the sequence matches
+      if (
+        keys.length === KONAMI_CODE.length &&
+        keys.every((key, index) => key === KONAMI_CODE[index])
+      ) {
+        playSound("konami");
+        setIsActive(true);
+        keys = [];
+      }
     };
 
     window.addEventListener("keydown", handleKeyDown);
