@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 
 const contactSchema = z.object({
@@ -22,6 +23,8 @@ interface ContactFormProps {
 
 export function ContactForm({ onClose }: ContactFormProps) {
   const t = useTranslations("contact");
+  const params = useParams();
+  const locale = (params.locale as string) || "fr";
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
   const [mounted, setMounted] = useState(false);
@@ -48,7 +51,7 @@ export function ContactForm({ onClose }: ContactFormProps) {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, locale }),
       });
 
       if (response.ok) {
