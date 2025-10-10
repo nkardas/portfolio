@@ -20,8 +20,8 @@ export async function POST(request: NextRequest) {
 
     // Envoi de l'email avec Resend
     const { data, error } = await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || "Portfolio Contact <onboarding@resend.dev>",
-      to: process.env.CONTACT_EMAIL!,
+      from: "Portfolio <noreply@nkardas.fr>",
+      to: process.env.CONTACT_EMAIL || "services.nkardas@icloud.com",
       replyTo: validatedData.email,
       subject: `Nouveau message de ${validatedData.name}`,
       html: `
