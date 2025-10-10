@@ -1,0 +1,62 @@
+import { Resend } from "resend";
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+// Schéma de validation avec Zod
+const contactSchema = z.object({
+  name: z.string().min(2, "Le nom doit contenir au moins 2 caractères"),
+  email: z.string().email("Email invalide"),
+  message: z.string().min(10, "Le message doit contenir au moins 10 caractères"),
+});
+
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json();
+
+    // Validation avec Zod
+    const validatedData = contactSchema.parse(body);
+
+    // Envoi de l'email avec Resend
+    const { data, error } = await resend.emails.send({
+      from: process.env.RESEND_FROM_EMAIL || "Portfolio Contact <onboarding@resend.dev>",
+      to: process.env.CONTACT_EMAIL!,
+      replyTo: validatedData.email,
+      subject: `Nouveau message de ${validatedData.name}`,
+      html: `
+        <h2>Nouveau message depuis votre portfolio</h2>
+        <p><strong>Nom :</strong> ${validatedData.name}</p>
+        <p><strong>Email :</strong> ${validatedData.email}</p>
+        <p><strong>Message :</strong></p>
+        <p>${validatedData.message.replace(/\n/g, "<br>")}</p>
+      `,
+    });
+
+    if (error) {
+      console.error("Erreur Resend:", error);
+      return NextResponse.json(
+        { error: "Erreur lors de l'envoi de l'email" },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json(
+      { message: "Message envoyé avec succès", id: data?.id },
+      { status: 200 }
+    );
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return NextResponse.json(
+        { error: "Données invalides", issues: error.issues },
+        { status: 400 }
+      );
+    }
+
+    console.error("Erreur serveur:", error);
+    return NextResponse.json(
+      { error: "Erreur serveur" },
+      { status: 500 }
+    );
+  }
+}

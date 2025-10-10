@@ -26,7 +26,8 @@
       "web": "Web & Mobile",
       "electronics": "Électronique",
       "school": "Projets Scolaires",
-      "personal": "Projets Personnels"
+      "personal": "Projets Personnels",
+      "professional": "Projets Professionnels"
     },
     "viewProject": "Voir le projet",
     "externalLink": "Lien externe",
@@ -42,6 +43,34 @@
     "personal-website": {
       "title": "nkardas.fr",
       "description": "Portfolio personnel avec Next.js 15, React 19 et Tailwind CSS v4. Design minimaliste avec mode sombre et internationalisation."
+    },
+    "ascon-aead128": {
+      "title": "ASCON-AEAD128",
+      "description": "Modélisation en SystemVerilog d'un algorithme de chiffrement authentifié avec données associées (AEAD). Architecture matérielle sécurisée pour FPGA."
+    },
+    "ecg-ihm": {
+      "title": "ECG IHM",
+      "description": "Dispositif ECG portable intégré : électrodes flexibles fabriquées en salle blanche, carte d'acquisition STM32 et affichage LED. Projet biomédical multidisciplinaire complet."
+    },
+    "serre-iot": {
+      "title": "Serre Connectée IoT",
+      "description": "Serre intelligente avec capteurs environnementaux, transmission LoRaWAN et automatisation cloud (Datacake). Optimisation des ressources pour une agriculture durable."
+    },
+    "guitare-prototypage": {
+      "title": "Guitare d'Entraînement",
+      "description": "Prototype de guitare avec capteurs capacitifs et matrice LED pour aider les débutants. Détection temps réel de la pression sur cordes et frettes."
+    },
+    "securite-web": {
+      "title": "Sécurité Web",
+      "description": "Pentesting sur DVWA et développement de PyFlaSQL. Exploitation de vulnérabilités (SQL Injection, XSS, File Inclusion) et apprentissage de la sécurité applicative."
+    },
+    "1nsyt": {
+      "title": "1NSYT - Extension Chrome IA",
+      "description": "Extension Chrome avec IA générative (Mistral AI) pour LinkedIn. Architecture fullstack (Next.js 15, Prisma, Redis), conformité GDPR complète et dashboard admin."
+    },
+    "lab-o-matic": {
+      "title": "Lab-O-Matic - LIMS",
+      "description": "LIMS fullstack professionnel pour laboratoire industriel. Architecture moderne (NestJS + Next.js 15) avec intégrations ERP et Firebase. Projet freelance en production."
     },
     "project-placeholder-1": {
       "title": "Projet Électronique",
@@ -67,7 +96,19 @@
   "contact": {
     "title": "Travaillons ensemble",
     "description": "Un projet en tête ? Discutons de vos besoins et voyons comment je peux vous aider.",
-    "cta": "Me contacter"
+    "cta": "Me contacter",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-moi de votre projet...",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès ! Je vous répondrai rapidement.",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    }
   },
   "cv": {
     "title": "Curriculum Vitae",

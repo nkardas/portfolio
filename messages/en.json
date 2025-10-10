@@ -26,7 +26,8 @@
       "web": "Web & Mobile",
       "electronics": "Electronics",
       "school": "School Projects",
-      "personal": "Personal Projects"
+      "personal": "Personal Projects",
+      "professional": "Professional Projects"
     },
     "viewProject": "View project",
     "externalLink": "External link",
@@ -42,6 +43,34 @@
     "personal-website": {
       "title": "nkardas.fr",
       "description": "Personal portfolio with Next.js 15, React 19 and Tailwind CSS v4. Minimalist design with dark mode and internationalization."
+    },
+    "ascon-aead128": {
+      "title": "ASCON-AEAD128",
+      "description": "SystemVerilog modeling of an Authenticated Encryption with Associated Data (AEAD) algorithm. Secure hardware architecture for FPGA."
+    },
+    "ecg-ihm": {
+      "title": "ECG HMI",
+      "description": "Integrated portable ECG device: flexible cleanroom-fabricated electrodes, STM32 acquisition card and LED display. Complete multidisciplinary biomedical project."
+    },
+    "serre-iot": {
+      "title": "IoT Connected Greenhouse",
+      "description": "Smart greenhouse with environmental sensors, LoRaWAN transmission and cloud automation (Datacake). Resource optimization for sustainable agriculture."
+    },
+    "guitare-prototypage": {
+      "title": "Training Guitar",
+      "description": "Guitar prototype with capacitive sensors and LED matrix to help beginners. Real-time detection of pressure on strings and frets."
+    },
+    "securite-web": {
+      "title": "Web Security",
+      "description": "Pentesting on DVWA and PyFlaSQL development. Exploitation of vulnerabilities (SQL Injection, XSS, File Inclusion) and application security learning."
+    },
+    "1nsyt": {
+      "title": "1NSYT - AI Chrome Extension",
+      "description": "Chrome extension with generative AI (Mistral AI) for LinkedIn. Fullstack architecture (Next.js 15, Prisma, Redis), complete GDPR compliance and admin dashboard."
+    },
+    "lab-o-matic": {
+      "title": "Lab-O-Matic - LIMS",
+      "description": "Professional fullstack LIMS for industrial laboratory. Modern architecture (NestJS + Next.js 15) with ERP and Firebase integrations. Freelance project in production."
     },
     "project-placeholder-1": {
       "title": "Electronics Project",
@@ -67,7 +96,19 @@
   "contact": {
     "title": "Let's work together",
     "description": "Have a project in mind? Let's discuss your needs and see how I can help.",
-    "cta": "Contact me"
+    "cta": "Contact me",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! I'll get back to you soon.",
+      "error": "An error occurred. Please try again."
+    }
   },
   "cv": {
     "title": "Curriculum Vitae",

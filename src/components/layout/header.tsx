@@ -8,6 +8,7 @@ import { useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
 import { useState } from 'react'
 import Link from 'next/link'
+import { ContactForm } from '@/components/contact-form'
 
 export function Header() {
   const t = useTranslations('navigation')
@@ -15,13 +16,10 @@ export function Header() {
   const locale = params.locale as string
   const { theme } = useTheme()
   const [isHovered, setIsHovered] = useState(false)
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false)
 
-  const scrollToContact = (e: React.MouseEvent) => {
-    e.preventDefault()
-    const contactSection = document.querySelector('#contact')
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' })
-    }
+  const openContactForm = () => {
+    setIsContactFormOpen(true)
   }
 
   return (
@@ -54,7 +52,7 @@ export function Header() {
             {t('cv')}
           </Link>
           <button
-            onClick={scrollToContact}
+            onClick={openContactForm}
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
             {t('contact')}
@@ -71,6 +69,10 @@ export function Header() {
           </svg>
         </button>
       </div>
+
+      {isContactFormOpen && (
+        <ContactForm onClose={() => setIsContactFormOpen(false)} />
+      )}
     </header>
   )
 }

@@ -2,28 +2,36 @@
 
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { AnimatedCard } from "@/components/ui/animated-card";
-import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { Logo } from "@/components/ui/logo";
 import { useTheme } from "@/components/providers/theme-provider";
+import { ContactForm } from "@/components/contact-form";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem } from "@/lib/animations";
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
+import { projects as allProjects } from "@/data/projects";
+import { useState } from "react";
 
 export default function Home() {
   const t = useTranslations();
   const { theme } = useTheme();
   const params = useParams();
   const locale = params.locale as string;
-  const projects = [
-    { title: t('projects.project1'), description: t('projects.project1Description') },
-    { title: t('projects.project2'), description: t('projects.project2Description') },
-    { title: t('projects.project3'), description: t('projects.project3Description') }
-  ];
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+
+  // Get top 3 projects sorted by order
+  const topProjects = [...allProjects]
+    .sort((a, b) => (a.order || 999) - (b.order || 999))
+    .slice(0, 3)
+    .map(project => ({
+      slug: project.slug,
+      title: t(`projectsList.${project.slug}.title`),
+      description: t(`projectsList.${project.slug}.description`)
+    }));
 
   return (
-    <div className="min-h-screen pt-20">
+    <div key={locale} className="min-h-screen pt-20">
       <AnimatedSection className="min-h-screen flex flex-col items-center justify-center text-center px-8 -mt-20">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -70,17 +78,19 @@ export default function Home() {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
-            {projects.map((project, i) => (
-              <motion.div key={i} variants={staggerItem} className="flex">
-                <AnimatedCard className="group p-8 border border-border rounded-xl bg-card hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col h-full">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                    <span className="text-2xl text-primary">0{i + 1}</span>
-                  </div>
-                  <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed flex-1">
-                    {project.description}
-                  </p>
-                </AnimatedCard>
+            {topProjects.map((project, i) => (
+              <motion.div key={project.slug} variants={staggerItem} className="flex">
+                <Link href={`/${locale}/projects/${project.slug}`} className="flex w-full">
+                  <AnimatedCard className="group p-8 border border-border rounded-xl bg-card hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col h-full w-full">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                      <span className="text-2xl text-primary">0{i + 1}</span>
+                    </div>
+                    <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed flex-1">
+                      {project.description}
+                    </p>
+                  </AnimatedCard>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
@@ -113,12 +123,17 @@ export default function Home() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => setIsContactFormOpen(true)}
             className="px-10 py-4 bg-primary text-primary-foreground rounded-xl font-medium text-lg hover:opacity-90 transition-opacity shadow-lg shadow-primary/20"
           >
             {t('contact.cta')}
           </motion.button>
         </AnimatedSection>
       </section>
+
+      {isContactFormOpen && (
+        <ContactForm onClose={() => setIsContactFormOpen(false)} />
+      )}
     </div>
   );
 }
