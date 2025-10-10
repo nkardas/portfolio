@@ -96,7 +96,16 @@
   "contact": {
     "title": "Travaillons ensemble",
     "description": "Un projet en tête ? Discutons de vos besoins et voyons comment je peux vous aider.",
-    "cta": "Me contacter",
+    "info": {
+      "title": "Coordonnées",
+      "email": "Email",
+      "availability": "📍 Disponible pour des missions freelance et projets intéressants"
+    },
+    "cta": {
+      "button": "Me contacter",
+      "title": "Démarrons un projet",
+      "subtitle": "Parlons de votre idée et donnons-lui vie ensemble"
+    },
     "form": {
       "name": "Nom",
       "namePlaceholder": "Votre nom",
@@ -195,5 +204,13 @@
       "chinese": "Chinois",
       "chineseLevel": "Intermédiaire"
     }
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "Désolé, la page que vous cherchez n'existe pas ou a été déplacée.",
+    "home": "Retour à l'accueil",
+    "back": "Page précédente",
+    "projects": "Voir les projets",
+    "funMessage": "💡 Astuce : Essayez le code Konami sur la page d'accueil ↑↑↓↓←→←→BA"
   }
 }

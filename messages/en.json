@@ -96,7 +96,16 @@
   "contact": {
     "title": "Let's work together",
     "description": "Have a project in mind? Let's discuss your needs and see how I can help.",
-    "cta": "Contact me",
+    "info": {
+      "title": "Contact Info",
+      "email": "Email",
+      "availability": "📍 Available for freelance projects and interesting opportunities"
+    },
+    "cta": {
+      "button": "Contact me",
+      "title": "Start a Project",
+      "subtitle": "Let's talk about your idea and bring it to life together"
+    },
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",
@@ -195,5 +204,13 @@
       "chinese": "Chinese",
       "chineseLevel": "Intermediate"
     }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "Sorry, the page you're looking for doesn't exist or has been moved.",
+    "home": "Back to home",
+    "back": "Go back",
+    "projects": "View projects",
+    "funMessage": "💡 Tip: Try the Konami code on the home page ↑↑↓↓←→←→BA"
   }
 }
