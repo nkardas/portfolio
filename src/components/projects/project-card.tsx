@@ -1,11 +1,11 @@
 "use client";
 
-import { Project } from "@/types/project";
+import { Project, ProjectCategory } from "@/types/project";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
-import { Calendar, ExternalLink } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 interface ProjectCardProps {
   project: Project;
@@ -13,11 +13,12 @@ interface ProjectCardProps {
   index: number;
 }
 
-const categoryColors = {
+const categoryColors: Record<ProjectCategory, string> = {
   web: "bg-blue-500/10 text-blue-500 border-blue-500/20",
   electronics: "bg-amber-500/10 text-amber-500 border-amber-500/20",
   school: "bg-green-500/10 text-green-500 border-green-500/20",
   personal: "bg-purple-500/10 text-purple-500 border-purple-500/20",
+  professional: "bg-indigo-500/10 text-indigo-500 border-indigo-500/20",
 };
 
 export function ProjectCard({ project, locale, index }: ProjectCardProps) {

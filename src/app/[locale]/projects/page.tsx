@@ -24,15 +24,17 @@ export default function ProjectsPage() {
     "electronics",
     "school",
     "personal",
+    "professional",
   ];
 
-  const filteredProjects =
+  const filteredProjects = (
     selectedCategory === "all"
       ? projects
-      : projects.filter((p) => p.categories.includes(selectedCategory));
+      : projects.filter((p) => p.categories.includes(selectedCategory))
+  ).sort((a, b) => (a.order || 999) - (b.order || 999));
 
   return (
-    <div className="min-h-screen pt-20 pb-16">
+    <div key={locale} className="min-h-screen pt-20 pb-16">
       {/* Header */}
       <AnimatedSection className="max-w-7xl mx-auto px-8 py-16">
         <div className="flex items-center gap-3 mb-4">
