@@ -11,6 +11,10 @@ export function LanguageSwitcher() {
   const switchLocale = (newLocale: string) => {
     const newPathname = pathname.replace(`/${locale}`, `/${newLocale}`)
     router.push(newPathname)
+    // Scroll to top after language change
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, 100)
   }
 
   return (

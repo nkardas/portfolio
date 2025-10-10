@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/lib/animations";
+import { useParams } from "next/navigation";
 
 interface AnimatedSectionProps {
   children: React.ReactNode;
@@ -18,11 +19,15 @@ export function AnimatedSection({
   className = "",
   delay = 0,
 }: AnimatedSectionProps) {
+  const params = useParams();
+  const locale = params.locale as string;
+
   return (
     <motion.div
+      key={`animated-section-${locale}`}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }} // Trigger 100px avant d'être visible
+      viewport={{ once: true, margin: "-100px", amount: 0.3 }}
       variants={fadeInUp}
       transition={{ delay }}
       className={className}
