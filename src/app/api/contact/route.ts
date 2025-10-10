@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
 
     // Email 1: Notification à toi (propriétaire)
     const { data: ownerData, error: ownerError } = await resend.emails.send({
-      from: "Portfolio <noreply@nkardas.fr>",
+      from: "Portfolio <noreply@send.nkardas.fr>",
       to: process.env.CONTACT_EMAIL || "services.nkardas@icloud.com",
       replyTo: validatedData.email,
       subject: `Nouveau message de ${validatedData.name}`,
@@ -61,7 +61,7 @@ export async function POST(request: NextRequest) {
     const confirmationSubject = getConfirmationEmailSubject(validatedData.locale as 'fr' | 'en');
 
     const { data: confirmData, error: confirmError } = await resend.emails.send({
-      from: "Némo Kardassevitch <noreply@nkardas.fr>",
+      from: "Némo Kardassevitch <noreply@send.nkardas.fr>",
       to: validatedData.email,
       subject: confirmationSubject,
       text: confirmationText,
