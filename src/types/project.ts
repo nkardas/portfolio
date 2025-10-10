@@ -1,4 +1,4 @@
-export type ProjectCategory = "web" | "electronics" | "school" | "personal";
+export type ProjectCategory = "web" | "electronics" | "school" | "personal" | "professional";
 
 export interface Project {
   slug: string;

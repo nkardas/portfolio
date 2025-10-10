@@ -1,13 +1,12 @@
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import { AnimatedSection } from "@/components/ui/animated-section";
-import { useTranslations } from "next-intl";
+import { MarkdownContent } from "@/components/ui/markdown-content";
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
-import { ArrowLeft, Calendar, ExternalLink, Tag } from "lucide-react";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import Image from "next/image";
+import { ArrowLeft, Calendar, ExternalLink } from "lucide-react";
 import { readFile } from "fs/promises";
 import { join } from "path";
 
@@ -39,7 +38,7 @@ async function getProjectContent(slug: string, locale: string) {
     );
     const content = await readFile(filePath, "utf-8");
     return content;
-  } catch (error) {
+  } catch {
     return null;
   }
 }
@@ -71,7 +70,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const content = await getProjectContent(slug, locale);
 
   return (
-    <div className="min-h-screen pt-20 pb-24">
+    <div key={`${slug}-${locale}`} className="min-h-screen pt-20 pb-24">
       {/* Back Button - Fixed positioning */}
       <div className="max-w-6xl mx-auto px-8 py-6">
         <AnimatedSection>
@@ -130,10 +129,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           {/* Right: Project Image */}
           <div className="w-full lg:w-2/5">
             <div className="relative aspect-video rounded-2xl overflow-hidden border border-border shadow-2xl">
-              <img
+              <Image
                 src={project.image}
                 alt={title}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           </div>
@@ -147,13 +147,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
       {/* Content Section */}
       {content ? (
-        <AnimatedSection delay={0.2} className="max-w-4xl mx-auto px-8">
-          <article className="markdown-content">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
-          </article>
-        </AnimatedSection>
+        <div className="max-w-4xl mx-auto px-8">
+          <MarkdownContent content={content} />
+        </div>
       ) : (
-        <AnimatedSection delay={0.2} className="max-w-4xl mx-auto px-8">
+        <div className="max-w-4xl mx-auto px-8">
           <div className="text-center py-24 border-2 border-dashed border-border rounded-2xl">
             <p className="text-muted-foreground text-lg">
               {locale === "fr"
@@ -161,7 +159,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 : "Detailed content coming soon..."}
             </p>
           </div>
-        </AnimatedSection>
+        </div>
       )}
     </div>
   );
