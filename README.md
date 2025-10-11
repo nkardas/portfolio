@@ -52,7 +52,6 @@ portfolio/
 │   ├── projects/              # Images des projets
 │   ├── favicon.svg            # Favicon SVG
 │   └── icon.svg               # Icon haute résolution
-└── docs/                      # Documentation Docusaurus
 ```
 
 ## 🎨 Design System
@@ -103,15 +102,6 @@ Les CV sont stockés en JSON dans `public/cv/` :
 - `CV-Nemo-Kardassevitch-EN.json`
 
 Les PDF sont générés et téléchargeables depuis la page `/cv`.
-
-## 📚 Documentation
-
-La documentation de développement complète est disponible dans `/docs` (Docusaurus) :
-- Architecture et conventions
-- Composants UI
-- Design system
-- Guide i18n
-- Roadmap du projet
 
 ## 🚢 Déploiement
 
