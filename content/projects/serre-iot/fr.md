@@ -51,13 +51,6 @@ Objectifs : surveiller en temps réel les conditions environnementales, transmet
 
 ![Dashboard Datacake](/projects/serre-iot-dashboard.png)
 
-## Technologies Utilisées
-
-**Hardware** : BME680, LM94021, carte OCASS, actionneurs (relais)
-**Communication** : LoRaWAN (868 MHz), The Things Network (TTN), I2C, ADC, UART
-**Programmation** : C embarqué, configuration LoRaWAN
-**Cloud** : Datacake (dashboards, alertes, API)
-
 ## Défis Techniques
 
 **Optimisation LoRaWAN** : Respecter les limites de duty cycle (< 1% du temps d'émission), minimiser la taille des trames pour économiser l'énergie et respecter les contraintes réglementaires.
@@ -68,14 +61,15 @@ Objectifs : surveiller en temps réel les conditions environnementales, transmet
 
 **Intégration cloud** : Configurer le pipeline TTN → Datacake, formater les payloads (encodeur/décodeur JavaScript), et créer des dashboards pertinents.
 
-## Résultats
+## Technologies Utilisées
 
-✅ Système fonctionnel avec acquisition multi-capteurs en temps réel
-✅ Transmission LoRaWAN réussie sur plusieurs kilomètres
-✅ Dashboard Datacake opérationnel avec historique et alertes
-✅ Contrôle d'actionneurs via downlinks validé
+**Hardware** : BME680, LM94021, carte OCASS, actionneurs (relais)
 
-**Impact** : Solution d'agriculture de précision économe en ressources, extensible à des déploiements multi-serres, et permettant une gestion data-driven des cultures.
+**Communication** : LoRaWAN (868 MHz), The Things Network (TTN), I2C, ADC, UART
+
+**Programmation** : C embarqué, configuration LoRaWAN
+
+**Cloud** : Datacake (dashboards, alertes, API)
 
 ## Compétences Développées
 

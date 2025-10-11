@@ -91,24 +91,6 @@ Develop a functional prototype to:
 - Individual buttons per actuator
 - Emergency button for global shutdown
 
-## Technologies Used
-
-### Hardware
-- OCASS Board (microcontroller)
-- LoRaWAN module
-- BME680 & LM94021 sensors
-- Actuators (simulated with LED for testing)
-
-### Software & Platforms
-- **Embedded C** programming
-- **The Things Network** (LoRa reception)
-- **Datacake** (cloud, dashboards, automation)
-
-### Protocols & Interfaces
-- I2C, ADC, Timer
-- LoRaWAN (long-range transmission)
-- Downlinks for actuator control
-
 ## Testing & Validation
 
 ### 2-Phase Test Protocol
@@ -171,24 +153,21 @@ Develop a functional prototype to:
 - Urban green space management
 - Specialized crops (aromatic herbs, microgreens)
 
-## Learnings
+## Technologies Used
 
-### IoT Skills
-- Complete connected system architecture
-- Long-range communication protocols (LoRaWAN)
-- Cloud integration and data visualization
-- Event-driven automation
+**Hardware**: BME680, LM94021, OCASS board, actuators (relays)
 
-### Embedded Electronics
-- Multi-sensor management (I2C, ADC)
-- Timers and acquisition periodicity
-- Downlinks and actuator control
-- Energy consumption optimization
+**Communication**: LoRaWAN (868 MHz), The Things Network (TTN), I2C, ADC, UART
 
-### Project Methodology
-- Environmental needs and constraints analysis
-- Justified technology choices (LoRa vs WiFi)
-- Incremental testing and step-by-step validation
-- Sustainable agriculture and environmental impact
+**Programming**: Embedded C, LoRaWAN configuration
 
-This project demonstrates how IoT can serve sustainable agriculture by optimizing resources while maintaining optimal growing conditions, addressing contemporary environmental challenges.
+**Cloud**: Datacake (dashboards, alerts, API)
+
+## Skills Developed
+
+- Embedded systems (C, timers, ADC, I2C, UART)
+- IoT protocols (LoRaWAN, ABP, duty cycle management)
+- Cloud architecture (TTN, Datacake, API)
+- Environmental sensors and calibration
+- Remote automation and control
+- Energy optimization for autonomous systems
