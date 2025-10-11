@@ -42,18 +42,14 @@ L'implémentation suit les quatre phases standard d'ASCON :
 
 **Validation** : Vérifier la conformité avec les vecteurs de test officiels d'ASCON via chronogrammes et simulations.
 
-## Résultats
-
-✅ Chiffrement et authentification conformes aux spécifications ASCON
-✅ Validation réussie avec vecteurs de test officiels
-✅ Architecture matérielle optimisée pour FPGA
-✅ Chronogrammes confirmant le comportement attendu
-
-## Technologies
+## Technologies Utilisées
 
 **Langage** : SystemVerilog
+
 **Algorithme** : ASCON-AEAD128
+
 **Cible** : FPGA (circuits programmables)
+
 **Outils** : Simulation matérielle, chronogrammes
 
 ## Compétences Développées
