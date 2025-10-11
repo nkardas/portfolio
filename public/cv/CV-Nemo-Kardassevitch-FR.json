@@ -99,7 +99,7 @@
           "area": "Département d'Ingénierie Électrique et Informatique",
           "score": "",
           "date": "Septembre 2025 - Décembre 2025",
-          "summary": "<p>Cours de niveau Master : IC Design & Verification, Bioelectronics, Database Systems.</p>",
+          "summary": "<p>Cours de niveau Master : IC Design & Verification, Bioelectronics, Database Systems. Approfondissement en conception de circuits intégrés et systèmes bioélectroniques.</p>",
           "url": {
             "label": "",
             "href": ""
@@ -113,7 +113,7 @@
           "area": "ISMIN (Microélectronique et Informatique)",
           "score": "",
           "date": "Septembre 2023 - Août 2026",
-          "summary": "<p>Spécialisation en microélectronique et informatique. Projets : ECG complet, implémentation ASCON128 en Verilog.</p>",
+          "summary": "<p>Spécialisation en microélectronique et informatique. Formation d'ingénieur alliant conception hardware et développement logiciel avec une approche projet concrète.</p>",
           "url": {
             "label": "",
             "href": ""
@@ -149,7 +149,7 @@
           "position": "Software Engineer Freelance",
           "location": "Remote depuis Seoul",
           "date": "Septembre 2025 - En cours",
-          "summary": "<p>Développement d'applications web modernes et d'écosystèmes applicatifs complexes (React, Next.js, Node.js).</p>",
+          "summary": "<p>Développement d'applications web modernes et d'écosystèmes complexes. Continuation et évolution du projet LIMS initié lors du stage chez SPYGEN.</p>",
           "url": {
             "label": "",
             "href": ""
@@ -162,10 +162,10 @@
           "position": "Développeur Full-Stack - Stage",
           "location": "Le Bourget-du-Lac, France",
           "date": "Avril 2025 - Août 2025",
-          "summary": "<p>Développement d'un LIMS complet pour laboratoire d'ADN environnemental (React, NestJS, PostgreSQL, Docker).</p>",
+          "summary": "<p>Développement d'un LIMS complet pour laboratoire d'ADN environnemental (React, NestJS, PostgreSQL, Docker). Architecture microservices gérant le workflow du laboratoire.</p>",
           "url": {
             "label": "",
-            "href": "https://www.spygen.com"
+            "href": ""
           }
         },
         {
@@ -175,10 +175,10 @@
           "position": "Ingénieur de Développement - Stage",
           "location": "Portet-Sur-Garonne, France",
           "date": "Janvier 2024 - Février 2024",
-          "summary": "<p>R&D en équipements audio haute fidélité. Test et validation de produits.</p>",
+          "summary": "<p>Stage de découverte des équipements audio haute fidélité. Apprentissage de techniques pratiques (soudure, design) et développement de compétences en électronique audio haut de gamme.</p>",
           "url": {
             "label": "",
-            "href": "https://kora.fr/en/homepage/"
+            "href": ""
           }
         },
         {
@@ -188,10 +188,10 @@
           "position": "Technicien Radiofréquence - Job Étudiant",
           "location": "Marseille & Paris, France",
           "date": "Juillet 2024 - Août 2024",
-          "summary": "<p>Surveillance et contrôle des fréquences radio durant les JO 2024 (Marseille & Paris).</p>",
+          "summary": "<p>Surveillance et contrôle des fréquences radio durant les JO 2024. Utilisation d'équipements de mesure et participation à la sécurisation des communications lors d'un événement international majeur.</p>",
           "url": {
             "label": "",
-            "href": "https://www.anfr.fr/accueil"
+            "href": ""
           }
         },
         {
@@ -204,7 +204,7 @@
           "summary": "<p>Emploi saisonnier au service de la collectivité locale avec responsabilités en gestion urbaine. Organisation et animation des zones de parking. Participation à l'accueil et l'orientation des visiteurs.</p>",
           "url": {
             "label": "",
-            "href": "https://lacouvertoirade.com"
+            "href": ""
           }
         }
       ]
@@ -225,8 +225,8 @@
           "date": "Mars 2024 - Avril 2025",
           "summary": "<p>Direction de l'association étudiante. Gestion budgétaire, événements et management d'équipe.</p>",
           "url": {
-            "label": "LinkedIn",
-            "href": "https://www.linkedin.com/company/bde-emse-ismin/"
+            "label": "",
+            "href": ""
           }
         },
         {

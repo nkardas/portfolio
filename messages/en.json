@@ -135,13 +135,13 @@
         "degree": "Exchange Program - Electrical & Computer Engineering",
         "school": "Seoul National University",
         "period": "Sept. 2025 - Dec. 2025",
-        "description": "Graduate-level courses: IC Design & Verification, Bioelectronics, Database Systems"
+        "description": "Graduate-level courses: IC Design & Verification, Bioelectronics, Database Systems. Deep dive into integrated circuit design and bioelectronic systems."
       },
       "ismin": {
         "degree": "Engineering Degree in ISMIN",
         "school": "Mines Saint-Étienne",
         "period": "Sept. 2023 - Aug. 2026",
-        "description": "Specialization in microelectronics and computer science. Projects: Complete ECG, ASCON128 Verilog implementation"
+        "description": "Specialization in microelectronics and computer science. Engineering training combining hardware design and software development with hands-on project approach."
       },
       "prepa": {
         "degree": "MPSI/MP - Preparatory Classes",
@@ -157,14 +157,14 @@
         "company": "Self-Employed",
         "period": "Sept. 2025 - Present",
         "location": "Remote from Seoul",
-        "description": "Development of modern web applications and complex application ecosystems"
+        "description": "Development of modern web applications and complex ecosystems. Continuation and evolution of the LIMS project initiated during the internship at SPYGEN."
       },
       "spygen": {
         "title": "Full-Stack Developer - Internship",
         "company": "SPYGEN",
         "period": "Apr. 2025 - Aug. 2025",
         "location": "Le Bourget-du-Lac, France",
-        "description": "Development of a complete LIMS for environmental DNA analysis laboratory"
+        "description": "Development of a complete LIMS for environmental DNA analysis laboratory (React, NestJS, PostgreSQL, Docker). Microservices architecture managing laboratory workflow."
       },
       "bde": {
         "title": "President",
@@ -178,14 +178,14 @@
         "company": "ANFR - National Frequency Agency",
         "period": "Jul. 2024 - Aug. 2024",
         "location": "Marseille & Paris, France",
-        "description": "Temporary mission during the 2024 Olympics. Radio frequency monitoring and control during Olympic events"
+        "description": "Radio frequency monitoring and control during the 2024 Olympics. Use of measurement equipment and participation in securing communications during a major international event."
       },
       "kora": {
-        "title": "Development Engineer",
+        "title": "Development Engineer - Internship",
         "company": "KORA HIGH FIDELITY",
         "period": "Jan. 2024 - Feb. 2024",
         "location": "Portet-Sur-Garonne, France",
-        "description": "R&D for high-fidelity audio equipment, design processes and validation"
+        "description": "Internship discovering high-fidelity audio equipment. Learning practical techniques (soldering, design) and developing skills in high-end audio electronics."
       }
     },
     "skills": {

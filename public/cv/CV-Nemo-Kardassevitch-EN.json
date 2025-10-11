@@ -99,7 +99,7 @@
           "area": "Electrical & Computer Engineering Department",
           "score": "",
           "date": "September 2025 - December 2025",
-          "summary": "<p>Graduate-level courses: IC Design & Verification, Bioelectronics, Database Systems.</p>",
+          "summary": "<p>Graduate-level courses: IC Design & Verification, Bioelectronics, Database Systems. Deep dive into integrated circuit design and bioelectronic systems.</p>",
           "url": {
             "label": "",
             "href": ""
@@ -113,7 +113,7 @@
           "area": "ISMIN (Microelectronics and Computer Science)",
           "score": "",
           "date": "September 2023 - August 2026",
-          "summary": "<p>Specialization in microelectronics and computer science. Projects: Complete ECG, ASCON128 Verilog implementation.</p>",
+          "summary": "<p>Specialization in microelectronics and computer science. Engineering training combining hardware design and software development with hands-on project approach.</p>",
           "url": {
             "label": "",
             "href": ""
@@ -149,7 +149,7 @@
           "position": "Software Engineer Freelance",
           "location": "Remote from Seoul",
           "date": "September 2025 - Present",
-          "summary": "<p>Development of modern web applications and complex application ecosystems (React, Next.js, Node.js).</p>",
+          "summary": "<p>Development of modern web applications and complex ecosystems. Continuation and evolution of the LIMS project initiated during the internship at SPYGEN.</p>",
           "url": {
             "label": "",
             "href": ""
@@ -162,10 +162,10 @@
           "position": "Full-Stack Developer - Internship",
           "location": "Le Bourget-du-Lac, France",
           "date": "April 2025 - August 2025",
-          "summary": "<p>Development of a complete LIMS for environmental DNA analysis laboratory (React, NestJS, PostgreSQL, Docker).</p>",
+          "summary": "<p>Development of a complete LIMS for environmental DNA analysis laboratory (React, NestJS, PostgreSQL, Docker). Microservices architecture managing laboratory workflow.</p>",
           "url": {
             "label": "",
-            "href": "https://www.spygen.com"
+            "href": ""
           }
         },
         {
@@ -175,10 +175,10 @@
           "position": "Development Engineer - Internship",
           "location": "Portet-Sur-Garonne, France",
           "date": "January 2024 - February 2024",
-          "summary": "<p>R&D for high-fidelity audio equipment. Product testing and validation.</p>",
+          "summary": "<p>Internship discovering high-fidelity audio equipment. Learning practical techniques (soldering, design) and developing skills in high-end audio electronics.</p>",
           "url": {
             "label": "",
-            "href": "https://kora.fr/en/homepage/"
+            "href": ""
           }
         },
         {
@@ -188,10 +188,10 @@
           "position": "Radiofrequency Technician - Student Job",
           "location": "Marseille & Paris, France",
           "date": "July 2024 - August 2024",
-          "summary": "<p>Radio frequency monitoring and control during the 2024 Olympics (Marseille & Paris).</p>",
+          "summary": "<p>Radio frequency monitoring and control during the 2024 Olympics. Use of measurement equipment and participation in securing communications during a major international event.</p>",
           "url": {
             "label": "",
-            "href": "https://www.anfr.fr/accueil"
+            "href": ""
           }
         },
         {
@@ -204,7 +204,7 @@
           "summary": "<p>Seasonal employment in the service of the local community with responsibilities in urban management. Organization and management of parking areas. Participation in welcoming and guiding visitors.</p>",
           "url": {
             "label": "",
-            "href": "https://lacouvertoirade.com"
+            "href": ""
           }
         }
       ]
@@ -225,8 +225,8 @@
           "date": "March 2024 - April 2025",
           "summary": "<p>Student association management. Budget management, events, and team leadership.</p>",
           "url": {
-            "label": "LinkedIn",
-            "href": "https://www.linkedin.com/company/bde-emse-ismin/"
+            "label": "",
+            "href": ""
           }
         },
         {

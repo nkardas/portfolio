@@ -135,13 +135,13 @@
         "degree": "Échange Universitaire - Ingénierie Électrique et Informatique",
         "school": "Seoul National University",
         "period": "Sept. 2025 - Déc. 2025",
-        "description": "Cours de niveau Master : IC Design & Verification, Bioelectronics, Database Systems"
+        "description": "Cours de niveau Master : IC Design & Verification, Bioelectronics, Database Systems. Approfondissement en conception de circuits intégrés et systèmes bioélectroniques."
       },
       "ismin": {
         "degree": "Diplôme d'Ingénieur ISMIN",
         "school": "École des Mines de Saint-Étienne",
         "period": "Sept. 2023 - Août 2026",
-        "description": "Spécialisation en microélectronique et informatique. Projets : ECG complet, implémentation ASCON128 en Verilog"
+        "description": "Spécialisation en microélectronique et informatique. Formation d'ingénieur alliant conception hardware et développement logiciel avec une approche projet concrète."
       },
       "prepa": {
         "degree": "MPSI/MP - Classes Préparatoires",
@@ -157,14 +157,14 @@
         "company": "Indépendant",
         "period": "Sept. 2025 - Aujourd'hui",
         "location": "Remote depuis Seoul",
-        "description": "Développement d'applications web modernes et d'écosystèmes applicatifs complexes"
+        "description": "Développement d'applications web modernes et d'écosystèmes complexes. Continuation et évolution du projet LIMS initié lors du stage chez SPYGEN."
       },
       "spygen": {
         "title": "Développeur Full-Stack - Stage",
         "company": "SPYGEN",
         "period": "Avr. 2025 - Août 2025",
         "location": "Le Bourget-du-Lac, France",
-        "description": "Développement d'un LIMS complet pour laboratoire d'analyse ADN environnemental"
+        "description": "Développement d'un LIMS complet pour laboratoire d'ADN environnemental (React, NestJS, PostgreSQL, Docker). Architecture microservices gérant le workflow du laboratoire."
       },
       "bde": {
         "title": "Président",
@@ -178,14 +178,14 @@
         "company": "ANFR - Agence Nationale des Fréquences",
         "period": "Juil. 2024 - Août 2024",
         "location": "Marseille & Paris, France",
-        "description": "Mission temporaire durant les JO 2024. Surveillance et contrôle des fréquences radio pendant les événements olympiques"
+        "description": "Surveillance et contrôle des fréquences radio durant les JO 2024. Utilisation d'équipements de mesure et participation à la sécurisation des communications lors d'un événement international majeur."
       },
       "kora": {
-        "title": "Ingénieur de Développement",
+        "title": "Ingénieur de Développement - Stage",
         "company": "KORA HIGH FIDELITY",
         "period": "Jan. 2024 - Fév. 2024",
         "location": "Portet-Sur-Garonne, France",
-        "description": "R&D en équipements audio haute fidélité, processus de conception et validation"
+        "description": "Stage de découverte des équipements audio haute fidélité. Apprentissage de techniques pratiques (soudure, design) et développement de compétences en électronique audio haut de gamme."
       }
     },
     "skills": {
