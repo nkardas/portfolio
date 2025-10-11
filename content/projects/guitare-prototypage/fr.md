@@ -55,13 +55,6 @@ Les cordes et frettes métalliques de guitare électrique sont utilisées comme 
 
 Le STM32 lit les fréquences des capteurs cordes et frettes, détermine quelles notes sont jouées, et allume les LEDs correspondantes sur la matrice 4×2. L'algorithme gère le multiplexage pour un affichage stable.
 
-## Technologies Utilisées
-
-**Électronique** : STM32 L476RG, TLC555 (oscillateur), matrice LED 4×2
-**Capteurs** : Capteurs capacitifs (cordes et frettes comme électrodes)
-**Programmation** : C embarqué, timers, GPIO
-**Simulation** : COMSOL Multiphysics (validation capacitive)
-
 ## Défis Techniques
 
 **Calibration des seuils** : Déterminer expérimentalement les fréquences de coupure pour distinguer contact/non-contact avec fiabilité malgré les variations de capacité parasites.
@@ -72,14 +65,15 @@ Le STM32 lit les fréquences des capteurs cordes et frettes, détermine quelles 
 
 **Ergonomie** : Adapter les seuils à différents types de doigts (taille, humidité de la peau) et styles de jeu.
 
-## Résultats
+## Technologies Utilisées
 
-✅ Détection capacitive fonctionnelle pour cordes et frettes
-✅ Affichage LED temps réel localisant précisément les notes jouées
-✅ Validation COMSOL confirmant la faisabilité (variation ×500)
-✅ Prototype 4 cordes × 2 frettes démontrant le concept
+**Électronique** : STM32 L476RG, TLC555 (oscillateur), matrice LED 4×2
 
-**Perspectives** : Extension à 6 cordes et plus de frettes, ajout d'un mode d'apprentissage guidé, intégration d'un métronome, et application mobile compagnon.
+**Capteurs** : Capteurs capacitifs (cordes et frettes comme électrodes)
+
+**Programmation** : C embarqué, timers, GPIO
+
+**Simulation** : COMSOL Multiphysics (validation capacitive)
 
 ## Compétences Développées
 

@@ -151,43 +151,13 @@ where F = square signal frequency
 
 ## Technologies Used
 
-### Hardware
-- STM32 Nucleo64 L152RE
-- 6 conditioning circuits (Op-Amps, resistors)
-- 4×2 LED matrix with resistors
-- Custom PCB (Kicad)
-- 3D-printed enclosure
-- Metallic guitar strings
+**Electronics**: STM32 L476RG, TLC555 (oscillator), 4×2 LED matrix
 
-### Software & Simulation
-- **COMSOL Multiphysics**: Capacitance validation
-- **PartQuest**: Conditioner simulation
-- **Kicad**: Schematics and PCB
-- **STM32CubeIDE**: Embedded programming
+**Sensors**: Capacitive sensors (strings and frets as electrodes)
 
-### Technical Skills
-- Capacitive sensor physics
-- Analog electronics (Op-Amps, conditioners)
-- Timers and interrupts (STM32)
-- PCB design
-- Mechanical prototyping (3D)
+**Programming**: Embedded C, timers, GPIO
 
-## Results
-
-### Functional Prototype
-
-✅ Reliable detection of press on strings and frets
-✅ Real-time display on LED matrix
-✅ Immediate visual feedback for guitarist
-✅ Validation of capacitive sensor concept on guitar
-
-### Prototype Limitations
-
-**Current constraints:**
-- Only 4 strings × 2 frets (vs real guitar: 6× 24+)
-- Full guitar would require 30 conditioners
-- Lack of precise timers for scalability
-- Complex installation on real guitar
+**Simulation**: COMSOL Multiphysics (capacitive validation)
 
 ## Future Prospects
 
@@ -233,5 +203,3 @@ Recording played notes → automatic score creation (solo memorization).
 - 3D printing for enclosure
 - Mechanical/electronic integration
 - Complete system testing and validation
-
-This project demonstrates how electronics can serve musical learning by providing **immediate visual feedback**, solving a real pedagogical problem in an innovative and technical way.
