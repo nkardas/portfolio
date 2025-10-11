@@ -212,5 +212,18 @@
     "back": "Page précédente",
     "projects": "Voir les projets",
     "funMessage": "💡 Astuce : Essayez le code Konami sur la page d'accueil ↑↑↓↓←→←→BA"
+  },
+  "footer": {
+    "tagline": "Ingénieur Logiciel & Électronique",
+    "navigation": {
+      "title": "Navigation",
+      "home": "Accueil",
+      "projects": "Projets",
+      "cv": "CV"
+    },
+    "connect": "Me suivre",
+    "madeWith": "Fait avec",
+    "using": "avec",
+    "legal": "Mentions légales"
   }
 }

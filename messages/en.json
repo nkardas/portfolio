@@ -213,4 +213,18 @@
     "projects": "View projects",
     "funMessage": "💡 Tip: Try the Konami code on the home page ↑↑↓↓←→←→BA"
   }
+,
+  "footer": {
+    "tagline": "Software & Electronics Engineer",
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "projects": "Projects",
+      "cv": "Resume"
+    },
+    "connect": "Connect",
+    "madeWith": "Made with",
+    "using": "using",
+    "legal": "Legal Notice"
+  }
 }
