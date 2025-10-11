@@ -2,11 +2,11 @@
 
 ## Overview
 
-Fullstack development of a **LIMS (Laboratory Information Management System)** for an industrial laboratory. Project started as an internship then continued as a **freelance mission** for complete production deployment.
+Web application for industrial laboratory management. Sample tracking, analysis planning and automated report generation. Freelance mission in production.
 
 ## Project Context
 
-The project unfolded in two phases: a **final internship** (2024) to develop the MVP and establish technical foundations, then an **autonomous freelance mission** to extend features, integrate external systems, and ensure production deployment on Google Cloud Platform.
+The project unfolded in two phases: a **2nd-year engineering internship** of 4 months in April 2025 to develop the MVP and establish technical foundations, then an **autonomous freelance mission** started in September 2025 to extend features, integrate external systems, and ensure production deployment.
 
 ### Responsibilities
 - Requirements analysis and fullstack architecture design
@@ -67,7 +67,7 @@ The project unfolded in two phases: a **final internship** (2024) to develop the
 
 ## Results & Impact
 
-**Successful deployment**: Application in production used daily with high stability (low error rate, active monitoring) and optimal performance (< 2s loading).
+**Successful deployment**: Application in production used daily with high stability, active monitoring and optimal performance.
 
 **Business value**: Manual process automation, complete traceability, compliant reports, scalable architecture.
 

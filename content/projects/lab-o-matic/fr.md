@@ -2,11 +2,11 @@
 
 ## Vue d'ensemble
 
-Développement fullstack d'un **LIMS (Laboratory Information Management System)** pour un laboratoire industriel. Projet démarré en stage puis poursuivi en **mission freelance** pour le déploiement complet en production.
+Application web de gestion pour laboratoire industriel. Suivi des échantillons, planification des analyses et génération automatique de rapports. Mission freelance en production.
 
 ## Contexte du Projet
 
-Le projet s'est déroulé en deux phases : un **stage de fin d'études** (2024) pour développer le MVP et poser les fondations techniques, puis une **mission freelance autonome** pour étendre les fonctionnalités, intégrer les systèmes externes et assurer le déploiement en production sur Google Cloud Platform.
+Le projet s'est déroulé en deux phases : un **stage de 2ème année d'ingénieur** de 4 mois en avril 2025 pour développer le MVP et poser les fondations techniques, puis une **mission freelance autonome** démarrée en septembre 2025 pour étendre les fonctionnalités, intégrer les systèmes externes et assurer le déploiement en production.
 
 ### Responsabilités
 - Analyse des besoins et conception de l'architecture fullstack
@@ -67,7 +67,7 @@ Le projet s'est déroulé en deux phases : un **stage de fin d'études** (2024) 
 
 ## Résultats & Impact
 
-**Déploiement réussi** : Application en production utilisée quotidiennement avec stabilité élevée (faible taux d'erreurs, monitoring actif) et performances optimales (< 2s de chargement).
+**Déploiement réussi** : Application en production utilisée quotidiennement avec stabilité élevée, monitoring actif et performances optimales.
 
 **Valeur métier** : Automatisation des processus manuels, traçabilité complète, rapports conformes aux standards, architecture évolutive.
 
