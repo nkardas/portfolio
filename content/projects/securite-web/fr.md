@@ -87,12 +87,6 @@ Création d'une application Flask (Python) intentionnellement vulnérable pour d
 
 **Apprentissages** : Comprendre comment les vulnérabilités sont introduites dans le code et comment les corriger (versioning sécurisé vs vulnérable).
 
-## Technologies Utilisées
-
-**Pentesting** : DVWA (PHP/MySQL), Burp Suite, SQLMap, PortSwigger Academy
-**Développement** : Python, Flask, SQLite
-**Outils** : Kali Linux, netcat, reverse shells, serveurs HTTP Python
-
 ## Défis et Apprentissages
 
 **Contournement de protections** : Apprendre à identifier et contourner les protections faibles (filtres mal implémentés, validation insuffisante).
@@ -103,12 +97,13 @@ Création d'une application Flask (Python) intentionnellement vulnérable pour d
 
 **Bonnes pratiques** : Comprendre l'importance de la validation côté serveur, des requêtes préparées, de l'échappement HTML et des tokens CSRF.
 
-## Résultats
+## Technologies Utilisées
 
-✅ Exploitation réussie des vulnérabilités OWASP Top 10 sur DVWA (tous niveaux)
-✅ Application PyFlaSQL fonctionnelle démontrant les failles courantes
-✅ Compréhension approfondie des mécanismes d'attaque et contre-mesures
-✅ Compétences en pentesting éthique et développement sécurisé
+**Pentesting** : DVWA (PHP/MySQL), Burp Suite, SQLMap, PortSwigger Academy
+
+**Développement** : Python, Flask, SQLite
+
+**Outils** : Kali Linux, netcat, reverse shells, serveurs HTTP Python
 
 ## Compétences Développées
 

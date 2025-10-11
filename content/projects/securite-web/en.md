@@ -184,68 +184,17 @@ SELECT user, password FROM users;
 
 ## Technologies Used
 
-### Platforms & Tools
-- **PortSwigger Academy**: Security labs
-- **DVWA**: Vulnerable PHP/MySQL application
-- **Burp Suite**: HTTP interception proxy
-- **SQLite**: Database
+**Pentesting**: DVWA (PHP/MySQL), Burp Suite, SQLMap, PortSwigger Academy
 
-### Languages & Frameworks
-- **PHP** (DVWA)
-- **Python + Flask** (PyFlaSQL)
-- **SQL** (injections)
-- **JavaScript** (XSS)
+**Development**: Python, Flask, SQLite
 
-### Concepts
-- OWASP Top 10 2021
-- Ethical pentesting
-- Web application security
-- Cryptography (hashing)
+**Tools**: Kali Linux, netcat, reverse shells, Python HTTP servers
 
-## Results & Learnings
+## Skills Developed
 
-### Offensive Skills
-
-✅ File Inclusion exploitation (all levels)
-✅ SQL Injection with complete data extraction
-✅ XSS Reflected and Stored
-✅ Protection bypass (Medium/High)
-
-### Defensive Skills
-
-✅ Code flaw identification
-✅ Countermeasure implementation
-✅ Secure development (Flask)
-✅ OWASP best practices
-
-### Educational Impact
-
-- **Deep understanding** of attack mechanisms
-- **Awareness** of security risks
-- **Ability** to develop secure applications
-- **Protection** of sensitive user data
-
-## Learned Countermeasures
-
-### Input Validation
-- Whitelist vs Blacklist
-- Strict sanitization
-- Type and format verification
-
-### Data Security
-- bcrypt/Argon2 hashing
-- Unique salt per user
-- Never plaintext storage
-
-### Secure Architecture
-- Systematic prepared statements
-- Least privilege principle
-- Separation of concerns
-- Content Security Policy (CSP)
-
-### Access Control
-- Robust authentication
-- Granular authorization (RBAC)
-- Systematic permission validation
-
-This project offers a **complete application security experience**, essential for any developer who must design and secure modern web applications against current threats.
+- Ethical penetration testing (pentesting)
+- Web vulnerability exploitation (SQL Injection, XSS, CSRF, LFI/RFI, Command Injection)
+- Offensive tool usage (Burp Suite, SQLMap)
+- Web application development (Flask, Python)
+- Code analysis and security flaw identification
+- Countermeasure implementation and OWASP best practices
