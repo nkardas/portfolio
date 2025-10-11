@@ -90,17 +90,6 @@ export default function NotFound() {
           </Link>
         </motion.div>
 
-        {/* Fun Message */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="mt-16"
-        >
-          <p className="text-sm text-muted-foreground italic">
-            {t("funMessage")}
-          </p>
-        </motion.div>
       </div>
     </div>
   );

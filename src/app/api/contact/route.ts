@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
 
     const confirmationSubject = getConfirmationEmailSubject(validatedData.locale as 'fr' | 'en');
 
-    const { data: confirmData, error: confirmError } = await resend.emails.send({
+    const { error: confirmError } = await resend.emails.send({
       from: "Némo Kardassevitch <noreply@nkardas.fr>",
       to: validatedData.email,
       subject: confirmationSubject,

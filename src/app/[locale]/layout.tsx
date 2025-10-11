@@ -5,13 +5,13 @@ import { getMessages } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { Header } from '@/components/layout/header';
+import { Footer } from '@/components/layout/footer';
 import { ThemeProvider } from '@/components/providers/theme-provider';
-import { EasterEggProvider } from '@/components/easter-egg/easter-egg-provider';
-import { SnakeProvider } from '@/components/games/snake-provider';
 import { RetroModeProvider } from '@/components/retro-mode-provider';
 import { VioletModeProvider } from '@/components/violet-mode-provider';
 import { AchievementsProvider } from '@/components/achievements/achievements-provider';
 import { ConsoleInit } from '@/components/console-init';
+import { EasterEggWrapper } from '@/components/providers/easter-egg-wrapper';
 import "../globals.css";
 
 const geistMono = Geist_Mono({
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     description: "Portfolio et projets d'un ingénieur fullstack passionné par la tech et l'innovation",
     images: [
       {
-        url: "/og-image.png",
+        url: "/api/og",
         width: 1200,
         height: 630,
         alt: "Némo Kardassevitch - Portfolio",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Némo Kardassevitch - Ingénieur Logiciel & Électronique",
     description: "Portfolio et projets d'un ingénieur fullstack passionné par la tech et l'innovation",
-    images: ["/og-image.png"],
+    images: ["/api/og"],
   },
   robots: {
     index: true,
@@ -122,8 +122,8 @@ export default async function LocaleLayout({
             <AchievementsProvider />
             <Header />
             {children}
-            <EasterEggProvider />
-            <SnakeProvider />
+            <Footer />
+            <EasterEggWrapper>{null}</EasterEggWrapper>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

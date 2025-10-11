@@ -8,6 +8,8 @@ import { z } from "zod";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
+import { Spinner } from "@/components/ui/spinner";
+import { Send } from "lucide-react";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Le nom doit contenir au moins 2 caractères"),
@@ -107,7 +109,8 @@ export function ContactForm({ onClose }: ContactFormProps) {
             <input
               id="name"
               {...register("name")}
-              className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              disabled={isSubmitting}
+              className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
               placeholder={t("form.namePlaceholder")}
             />
             {errors.name && (
@@ -123,7 +126,8 @@ export function ContactForm({ onClose }: ContactFormProps) {
               id="email"
               type="email"
               {...register("email")}
-              className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              disabled={isSubmitting}
+              className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
               placeholder={t("form.emailPlaceholder")}
             />
             {errors.email && (
@@ -138,8 +142,9 @@ export function ContactForm({ onClose }: ContactFormProps) {
             <textarea
               id="message"
               {...register("message")}
+              disabled={isSubmitting}
               rows={5}
-              className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+              className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none disabled:opacity-50 disabled:cursor-not-allowed"
               placeholder={t("form.messagePlaceholder")}
             />
             {errors.message && (
@@ -162,9 +167,19 @@ export function ContactForm({ onClose }: ContactFormProps) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
           >
-            {isSubmitting ? t("form.sending") : t("form.submit")}
+            {isSubmitting ? (
+              <>
+                <Spinner size="sm" />
+                <span>{t("form.sending")}</span>
+              </>
+            ) : (
+              <>
+                <Send className="w-4 h-4" />
+                <span>{t("form.submit")}</span>
+              </>
+            )}
           </button>
         </form>
       </motion.div>
