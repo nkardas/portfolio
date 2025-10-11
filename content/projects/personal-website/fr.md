@@ -2,72 +2,65 @@
 
 ## Vue d'ensemble
 
-Portfolio personnel développé avec les technologies web les plus récentes pour présenter mes projets et mon parcours professionnel. L'accent est mis sur la performance, l'accessibilité et l'expérience utilisateur.
+Site portfolio personnel présentant mes projets et mon parcours professionnel. Développé avec les technologies web modernes en mettant l'accent sur les performances et l'expérience utilisateur.
 
-## Objectifs
+## Contexte du Projet
 
-- **Vitrine professionnelle** : Présenter mon travail et mes compétences
-- **Expérience utilisateur** : Navigation intuitive et design responsive
-- **Performance** : Temps de chargement optimaux et animations fluides
-- **Internationalisation** : Support complet FR/EN
+Création d'un site portfolio moderne servant de vitrine professionnelle. L'objectif était de concevoir une plateforme intuitive permettant de présenter efficacement mon travail tout en explorant les dernières technologies web, notamment Next.js 15 avec Turbopack et Tailwind CSS v4.
 
-## Technologies utilisées
+### Responsabilités
+- Conception et développement complet du site
+- Intégration du système de thème clair/sombre
+- Configuration de l'internationalisation FR/EN
+- Optimisation des performances et du SEO
+- Documentation technique
+
+## Architecture Technique
 
 ### Frontend
-- **Next.js 15** avec App Router et Turbopack
-- **React 19** avec Server Components
-- **TypeScript 5** pour la sécurité des types
-- **Tailwind CSS v4** pour le styling
-- **Framer Motion** pour les animations
+Le site utilise Next.js 15 avec App Router pour le rendu côté serveur et la génération statique des pages. L'interface est construite avec React 19 et TypeScript pour garantir la fiabilité du code. Tailwind CSS v4 gère le styling avec un système de design cohérent, tandis que Framer Motion assure des animations fluides.
 
-### Tooling
-- **next-intl** pour l'internationalisation
-- **Lucide React** pour les icônes
-- **Husky + Commitlint** pour la qualité du code
+### Internationalisation
+L'application supporte nativement le français et l'anglais grâce à next-intl. Le système détecte automatiquement la langue du navigateur et génère des URLs localisées pour un meilleur référencement. Toutes les pages et composants sont traduits, incluant les messages d'erreur et les métadonnées SEO.
 
-## Fonctionnalités principales
+### Design System
+Un système de thème complet permet de basculer entre mode clair et sombre avec persistance des préférences. Le design s'adapte automatiquement à tous les écrans avec une approche mobile-first. Les logos animés existent en deux variantes selon le contexte d'utilisation.
 
-### 🎨 Design System
-- Thème clair/sombre avec transition fluide
-- Charte graphique cohérente
-- Logo animé avec variantes
+## Fonctionnalités Principales
 
-### 🌍 Multilingue
-- Support FR/EN complet
-- Détection automatique de la langue
-- URLs localisées
+### Présentation des Projets
+Système complet de gestion des projets avec support Markdown pour le contenu détaillé. Chaque projet dispose d'une page dédiée avec images, descriptions multilingues et métadonnées. Un système de filtrage par catégorie facilite la navigation entre les différents types de projets.
 
-### 📱 Responsive Design
-- Mobile-first approach
-- Optimisé pour tous les écrans
-- Touch-friendly interactions
+### Formulaire de Contact
+Formulaire fonctionnel avec validation côté client et serveur utilisant React Hook Form et Zod. L'envoi d'emails est géré par Resend API avec double notification : confirmation pour le visiteur et alerte pour le propriétaire. Les messages d'erreur sont contextuels et traduits.
 
-### ⚡ Performance
-- Static generation avec Next.js
-- Images optimisées
-- Code splitting automatique
+### Page CV Interactive
+Curriculum vitae complet avec sections pour la formation, l'expérience professionnelle et les compétences techniques. Fonction de téléchargement PDF intégrée pour faciliter le partage. L'affichage s'adapte aux différentes tailles d'écran.
 
-## Défis techniques
+## Défis Techniques
 
-### Architecture Dual-Repo
-Mise en place d'une architecture séparant la documentation (Docusaurus) du site principal (Next.js) tout en maintenant une cohérence dans les commits et le versioning.
+**Animations performantes** : Utilisation avancée de Framer Motion pour créer des animations fluides sans impacter les performances. Optimisation des transitions de page et des animations de layout avec gestion du scroll.
 
-### Animations Performantes
-Utilisation de Framer Motion pour créer des animations fluides sans impacter les performances, notamment avec les animations de layout et les transitions de page.
+**Tailwind CSS v4 beta** : Adoption précoce de Tailwind v4 avec configuration PostCSS personnalisée et support des variables CSS natives. Adaptation aux changements de syntaxe et résolution des problèmes de compatibilité.
 
-### Tailwind CSS v4
-Adoption de Tailwind CSS v4 en beta avec configuration PostCSS personnalisée et support des variables CSS natives.
+**Internationalisation complète** : Gestion des traductions sur l'ensemble du site avec génération statique des pages localisées. Configuration du middleware next-intl pour le routing automatique.
 
-## Résultats
+## Résultats & Impact
 
-- ✅ Site entièrement fonctionnel et déployable
-- ✅ Score Lighthouse 100/100 en performance
-- ✅ Accessibilité WCAG AA
-- ✅ SEO optimisé
+**Site professionnel opérationnel** : Portfolio entièrement fonctionnel présentant efficacement les projets et compétences avec une navigation intuitive et un design moderne.
 
-## Prochaines étapes
+**Performances optimales** : Temps de chargement rapides grâce à la génération statique et au code splitting automatique. Images optimisées au format WebP avec lazy loading.
 
-- [ ] Ajout d'un blog technique
-- [ ] Analytics et monitoring
-- [ ] Optimisations SEO avancées
-- [ ] Progressive Web App
+**Expérience utilisateur soignée** : Interface responsive fonctionnant sur tous les appareils avec animations fluides et feedback visuel pour toutes les interactions.
+
+## Technologies Utilisées
+
+**Frontend** : Next.js 15, React 19, TypeScript, Tailwind CSS v4, Framer Motion
+
+**Internationalisation** : next-intl avec support FR/EN
+
+**Formulaires** : React Hook Form, Zod, Resend API
+
+**Infrastructure** : Vercel serverless, déploiement automatique
+
+**Documentation** : Docusaurus avec versioning Git
