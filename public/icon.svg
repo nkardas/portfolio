@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="100" fill="#252525"/>
-  <text x="256" y="370" font-family="monospace" font-size="320" font-weight="bold" fill="#8B7AB8" text-anchor="middle">NK</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="monospace" font-weight="600" font-size="298">
+    <tspan fill="#1A1A1A">n</tspan>
+    <tspan fill="#8B7AB8" dx="-180">K</tspan>
+  </text>
 </svg>
