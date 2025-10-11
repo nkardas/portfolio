@@ -48,18 +48,6 @@ Deux approches ont été explorées : une **matrice OLED** multicouche (ITO/HTL/
 
 **OLED** : Faire face à un pic d'oxygène lors de l'ouverture de chambre (défaut machine) et corriger l'oubli de la couche HBL qui causait des tensions excessives (13-20V).
 
-## Résultats
-
-**Réussites** :
-✅ Électrodes performantes sans gel conducteur (impédance ~7 Ω)
-✅ Signal ECG capté, filtré et visualisé en temps réel
-✅ Affichage LED fonctionnel avec texte défilant
-
-**Limitations** :
-⚠️ Second filtre instable
-⚠️ Calcul automatique du BPM non implémenté
-⚠️ Matrice OLED non exploitable hors environnement neutre
-
 ## Compétences Développées
 
 - Techniques de salle blanche (photolithographie, évaporation, lift-off)

@@ -92,20 +92,6 @@ Develop a functional electrocardiogram prototype integrating:
 - Missing HBL layer → excessive voltages (13-20V)
 - Matrix non-functional outside neutral environment
 
-## Results
-
-**Achievements:**
-- ✅ High-performance electrodes without conductive gel
-- ✅ ECG signal successfully captured and filtered
-- ✅ Real-time visualization on Serial Plot
-- ✅ Functional LED display
-
-**Limitations:**
-- ⚠️ Advanced filtering unstable (second filter)
-- ⚠️ Automatic BPM calculation not implemented
-- ⚠️ OLED matrix unusable
-- ⚠️ Partial final integration
-
 ## Learnings
 
 ### Technical Skills
