@@ -85,9 +85,6 @@ npm start
 
 # Linting
 npm run lint
-
-# Type checking
-npm run type-check
 ```
 
 ## 🌐 Internationalisation
